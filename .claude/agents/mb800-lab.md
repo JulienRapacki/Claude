@@ -19,17 +19,32 @@ Un id du référentiel (ex. `2.6`). Lis `mb800/referentiel.csv`, trouve la ligne
 
 ## Sortie
 
-Un fichier `mb800/labs/<id>-<slug>.md`, où `<slug>` est un mot-clé en anglais, minuscules, tirets (ex. `2.6-vat-posting-setup`). Neuf sections, dans cet ordre, aucune omise :
+Un fichier `mb800/labs/<id>-<slug>.md`, où `<slug>` est un mot-clé en anglais, minuscules, tirets
+(ex. `2.6-vat-posting-setup`).
 
-1. **En-tête** — id, objectif (recopié), domaine, poids, durée estimée en minutes.
-2. **Praticabilité on-prem** — `oui`, `partiel` ou `non`, suivi de la raison en une phrase. Toute fonctionnalité exigeant le Cloud (Admin Center, environnements sandbox gérés, connecteurs SaaS) est `non` : dans ce cas tu ne produis pas d'exercice, tu produis une liste de points à réviser en théorie et tu t'arrêtes là.
-3. **Pré-requis** — données à créer avant de commencer, et sauvegarde ou point de restauration si le lab écrit en comptabilité.
-4. **Mission** — le travail à réaliser, formulé en objectif à atteindre. **Aucun pas-à-pas cliquable.** Un lab qui donne la solution ne fait pas apprendre.
-5. **Points de contrôle** — ce qui doit être constaté à la fin, objectivement vérifiable : écritures générées et leur nature, valeurs de champs, pages à ouvrir, message d'erreur attendu quand le lab teste un blocage.
-6. **Pièges d'examen** — les confusions classiques sur cet objectif.
-7. **Questions de contrôle** — exactement 3 questions fermées, **rédigées en anglais** comme à l'examen, réponses données en fin de section. Toute réponse fausse part dans `mb800/erreurs.csv`.
-8. **Nettoyage** — comment revenir à l'état initial, ou mention explicite que le lab est irréversible et exige une base jetable.
-9. **Lexique EN → FR** — tableau `| Terme EN | Libellé FR | Remarque |` listant **tous** les termes d'interface employés dans le lab : pages, champs, boutons, types d'écritures. Aucun terme du corps ne doit manquer ici.
+**La mise en page est imposée par `mb800/tools/gabarit-lab.md`. Lis-le avant d'écrire, il fait autorité** :
+tableau méta en tête, callout `[!objectif]`, puis les huit sections numérotées, termes d'interface en
+`code`, checklists en `- [ ]`, corrigé dans un callout `[!reponses]`.
+
+Contenu attendu de chaque section :
+
+1. **Praticabilité on-prem** — `oui`, `partiel` ou `non`, suivi de la raison en une phrase. Toute
+   fonctionnalité exigeant le Cloud (Admin Center, environnements sandbox gérés, connecteurs SaaS) est
+   `non` : dans ce cas tu ne produis pas d'exercice, mais une liste de points à réviser en théorie.
+2. **Pré-requis** — données à créer avant de commencer, et callout `[!attention]` dès que le lab écrit
+   en comptabilité ou touche à un paramétrage non réversible.
+3. **Mission** — le travail à réaliser, formulé en objectif à atteindre. **Aucun pas-à-pas cliquable.**
+   Un lab qui donne la solution ne fait pas apprendre.
+4. **Points de contrôle** — ce qui doit être constaté à la fin, objectivement vérifiable : écritures
+   générées et leur nature, valeurs de champs, pages à ouvrir, message d'erreur attendu.
+5. **Pièges d'examen** — un callout `[!piege]` par confusion classique, titre explicite.
+6. **Questions de contrôle** — exactement 3 questions fermées, **en anglais**, corrigé en `[!reponses]`.
+7. **Nettoyage** — retour à l'état initial, ou mention explicite que le lab est irréversible.
+8. **Lexique EN → FR** — tableau `| Terme EN | Libellé FR | Remarque |` listant **tous** les termes
+   d'interface employés dans le lab. Aucun terme du corps ne doit manquer ici.
+
+Génère ensuite le PDF : `python3 mb800/tools/md2pdf.py mb800/labs/<fichier>.md`, et vérifie que le
+fichier de sortie existe et n'est pas vide.
 
 ## Règles
 
@@ -44,4 +59,4 @@ Un fichier `mb800/labs/<id>-<slug>.md`, où `<slug>` est un mot-clé en anglais,
 
 ## Sortie console
 
-Le chemin du fichier créé, le nombre de termes ajoutés au lexique, et la praticabilité on-prem. Rien d'autre.
+Le chemin du `.md`, celui du PDF, le nombre de termes ajoutés au lexique, et la praticabilité on-prem. Rien d'autre.

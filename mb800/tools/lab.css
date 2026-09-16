@@ -1,0 +1,186 @@
+/* Feuille de style d'impression des labs MB-800 */
+
+@page {
+  size: A4;
+  margin: 18mm 16mm 16mm 16mm;
+}
+
+:root {
+  --ink:        #1a1d21;
+  --ink-soft:   #4a5158;
+  --rule:       #d7dbe0;
+  --accent:     #1f4e79;   /* bleu sobre, lisible en N&B */
+  --alert:      #a42834;
+  --warn:       #8a5a00;
+  --ok:         #1e6b4f;
+  --code-bg:    #eef1f4;
+}
+
+html { font-size: 10.5pt; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Charter", "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Titres ---------- */
+
+h1, h2, h3, .meta th, .callout-title {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 19pt;
+  line-height: 1.2;
+  margin: 0 0 2mm;
+  color: var(--accent);
+  border-bottom: 2.5pt solid var(--accent);
+  padding-bottom: 2mm;
+}
+
+h2 {
+  font-size: 12.5pt;
+  margin: 8mm 0 3mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.5pt solid var(--rule);
+  break-after: avoid;
+}
+
+h3 { font-size: 11pt; margin: 5mm 0 2mm; break-after: avoid; }
+
+p { margin: 0 0 2.5mm; orphans: 3; widows: 3; }
+
+/* ---------- Bloc méta d'en-tête ---------- */
+
+table.meta {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 5mm;
+  font-size: 9.5pt;
+}
+table.meta td, table.meta th {
+  border: none;
+  border-bottom: 0.5pt solid var(--rule);
+  padding: 1.4mm 0;
+  text-align: left;
+  vertical-align: top;
+}
+table.meta th {
+  width: 34mm;
+  color: var(--ink-soft);
+  font-weight: 600;
+  font-size: 8.5pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---------- Tableaux ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3mm 0 5mm;
+  font-size: 9.5pt;
+  break-inside: auto;
+}
+th, td {
+  border: 0.5pt solid var(--rule);
+  padding: 1.6mm 2.2mm;
+  text-align: left;
+  vertical-align: top;
+}
+thead th {
+  background: var(--code-bg);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 8.5pt;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+tbody tr { break-inside: avoid; }
+tbody tr:nth-child(even) { background: #fafbfc; }
+
+/* ---------- Termes d'interface ---------- */
+
+code {
+  font-family: "JetBrains Mono", "Consolas", "DejaVu Sans Mono", monospace;
+  font-size: 0.88em;
+  background: var(--code-bg);
+  padding: 0.2mm 0.5mm;
+  border-radius: 1.5pt;
+  white-space: nowrap;
+}
+td code, th code { background: none; padding: 0; }
+
+/* ---------- Listes et checklists ---------- */
+
+ul, ol { margin: 0 0 3mm; padding-left: 6mm; }
+li { margin-bottom: 1.2mm; break-inside: avoid; }
+ol > li { padding-left: 1mm; }
+ol > li::marker { font-weight: 700; color: var(--accent); }
+
+ul.checklist { list-style: none; padding-left: 0; }
+ul.checklist li {
+  position: relative;
+  padding-left: 7mm;
+  margin-bottom: 2mm;
+}
+ul.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6mm;
+  width: 3.6mm;
+  height: 3.6mm;
+  border: 0.7pt solid var(--ink-soft);
+  border-radius: 1pt;
+}
+
+/* ---------- Callouts ---------- */
+
+.callout {
+  border-left: 2.5pt solid var(--accent);
+  background: #f5f7f9;
+  padding: 3mm 4mm 2mm;
+  margin: 4mm 0;
+  break-inside: avoid;
+}
+.callout-title {
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5mm;
+}
+.callout p:last-child, .callout ul:last-child, .callout ol:last-child { margin-bottom: 0; }
+
+.callout-objectif  { border-left-color: var(--accent); background: #eef3f8; }
+.callout-prerequis { border-left-color: var(--ink-soft); background: #f5f6f7; }
+.callout-prerequis .callout-title { color: var(--ink-soft); }
+.callout-attention { border-left-color: var(--alert); background: #fdf3f4; }
+.callout-attention .callout-title { color: var(--alert); }
+.callout-piege     { border-left-color: var(--warn); background: #fdf8ee; }
+.callout-piege .callout-title { color: var(--warn); }
+.callout-astuce    { border-left-color: var(--ok); background: #f0f7f4; }
+.callout-astuce .callout-title { color: var(--ok); }
+.callout-reponses  { border-left-color: var(--ink-soft); background: #f7f8f9; break-before: page; }
+.callout-reponses .callout-title { color: var(--ink-soft); }
+
+/* ---------- Pied de page du document ---------- */
+
+.docfoot {
+  margin-top: 8mm;
+  padding-top: 2mm;
+  border-top: 0.5pt solid var(--rule);
+  font-size: 8pt;
+  color: var(--ink-soft);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+hr { border: none; border-top: 0.5pt solid var(--rule); margin: 5mm 0; }
+a { color: var(--accent); text-decoration: none; }
