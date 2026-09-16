@@ -1,0 +1,21 @@
+terme_en,libelle_fr,page,objectif,remarque
+Dimension,à confirmer sur ta base,NA,1.4,Page de liste des dimensions
+Dimension Value,à confirmer sur ta base,NA,1.4,NA
+Dimension Value Type,à confirmer sur ta base,NA,1.4,"`Standard`, `Heading`, `Total`, `Begin-Total`, `End-Total`"
+Blocked,à confirmer sur ta base,NA,1.4,Champ présent sur la dimension value
+Global Dimension,à confirmer sur ta base,NA,1.4,Paramétré dans *General Ledger Setup*
+Shortcut Dimension,à confirmer sur ta base,NA,1.4,Numérotées 1 à 8
+Default Dimension,à confirmer sur ta base,NA,1.4,"Posée sur customer, vendor, item, G/L account…"
+Value Posting,à confirmer sur ta base,NA,1.4,"`Code Mandatory`, `Same Code`, `No Code`"
+Default Dimension Priorities,à confirmer sur ta base,NA,1.4,Par source code
+Dimension Combinations,à confirmer sur ta base,NA,1.4,Matrice `Blocked` / `Limited`
+Dimension Set ID,à confirmer sur ta base,NA,1.4,Champ sur les entries
+General Journal,à confirmer sur ta base,NA,1.4,NA
+G/L Entries,à confirmer sur ta base,NA,1.4,NA
+G/L Account,à confirmer sur ta base,NA,1.4,NA
+General Ledger Setup,à confirmer sur ta base,NA,1.4,NA
+Analysis by Dimensions,à confirmer sur ta base,NA,1.4,Nécessite une analysis view à jour
+Analysis View,à confirmer sur ta base,NA,1.4,NA
+Customer,à confirmer sur ta base,NA,1.4,NA
+Vendor,à confirmer sur ta base,NA,1.4,NA
+Tell Me,à confirmer sur ta base,NA,1.4,`Alt+Q`

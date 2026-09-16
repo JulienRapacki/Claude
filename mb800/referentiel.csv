@@ -1,0 +1,26 @@
+id,domaine,poids,objectif,confiance,date_evaluation,statut,note
+1.1,Set up Business Central,20-25,"Create and configure a company (assisted setup, company information, number series)",NA,NA,a_evaluer,NA
+1.2,Set up Business Central,20-25,"Manage security (users, user groups, permission sets, entitlements)",NA,NA,a_evaluer,NA
+1.3,Set up Business Central,20-25,"Set up core app functionality (email, document layouts, job queue, role centers and profiles)",NA,NA,a_evaluer,NA
+1.4,Set up Business Central,20-25,"Set up dimensions (dimensions, dimension values, default dimensions, dimension combinations)",NA,NA,a_evaluer,NA
+1.5,Set up Business Central,20-25,"Migrate data (configuration packages, configuration templates, export and import)",NA,NA,a_evaluer,NA
+1.6,Set up Business Central,20-25,Set up the change log and audit trails,NA,NA,a_evaluer,NA
+2.1,Configure financials,25-30,"Set up finance (chart of accounts, G/L account categories, accounting periods, journal templates and batches)",NA,NA,a_evaluer,NA
+2.2,Configure financials,25-30,"Set up posting groups (general posting setup, business and product posting groups, specific posting groups)",NA,NA,a_evaluer,NA
+2.3,Configure financials,25-30,"Set up currencies (exchange rates, additional reporting currency, exchange rate adjustment)",NA,NA,a_evaluer,NA
+2.4,Configure financials,25-30,"Set up accounts receivable (payment terms and methods, customer posting groups, reminders and finance charges)",NA,NA,a_evaluer,NA
+2.5,Configure financials,25-30,"Set up accounts payable (payment terms, vendor posting groups, payment discounts)",NA,NA,a_evaluer,NA
+2.6,Configure financials,25-30,"Set up VAT (VAT business and product posting groups, VAT posting setup, VAT statements, VAT reporting)",NA,NA,a_evaluer,NA
+2.7,Configure financials,25-30,"Set up cash management (bank accounts, bank account reconciliation, payment journals)",NA,NA,a_evaluer,NA
+2.8,Configure financials,25-30,"Set up fixed assets (fixed asset cards, depreciation books, FA posting groups)",NA,NA,a_evaluer,NA
+2.9,Configure financials,25-30,"Set up financial reporting (financial reports / account schedules, analysis by dimensions)",NA,NA,a_evaluer,NA
+3.1,Configure sales and purchasing,10-15,"Set up inventory (item cards, item categories, units of measure, costing methods, locations)",NA,NA,a_evaluer,NA
+3.2,Configure sales and purchasing,10-15,"Configure sales (customer cards, price lists, line and invoice discounts, salespeople, shipping agents)",NA,NA,a_evaluer,NA
+3.3,Configure sales and purchasing,10-15,"Configure purchasing (vendor cards, purchase prices and discounts, purchasers, purchases and payables setup)",NA,NA,a_evaluer,NA
+4.1,Perform Business Central operations,30-35,"Perform basic tasks (search, filters, personalization, notes and links, Excel/Word/Outlook integration)",NA,NA,a_evaluer,NA
+4.2,Perform Business Central operations,30-35,"Purchase items (quotes, orders, receipts, invoices, returns, credit memos, item charges, drop shipment)",NA,NA,a_evaluer,NA
+4.3,Perform Business Central operations,30-35,"Sell items (quotes, orders, shipments, invoices, blanket orders, returns, credit memos)",NA,NA,a_evaluer,NA
+4.4,Perform Business Central operations,30-35,"Process financial transactions (journals, applying entries, payments, reversals, recurring journals, deferrals)",NA,NA,a_evaluer,NA
+4.5,Perform Business Central operations,30-35,"Perform inventory operations (item journals, physical inventory, transfer orders, adjust cost, reordering policies)",NA,NA,a_evaluer,NA
+4.6,Perform Business Central operations,30-35,"Set up and use jobs (job cards, resources, time sheets, job planning lines, WIP)",NA,NA,a_evaluer,NA
+4.7,Perform Business Central operations,30-35,"Set up and use approval workflows (approval user setup, approval hierarchies, workflow templates)",NA,NA,a_evaluer,NA

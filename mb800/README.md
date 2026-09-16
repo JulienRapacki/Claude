@@ -1,0 +1,66 @@
+# Préparation MB-800
+
+Certification visée : *Microsoft Certified: Dynamics 365 Business Central Functional Consultant Associate*.
+Examen : **novembre 2026** — date exacte à figer ici : `à définir`.
+Study guide officiel : <https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800>
+
+> **À faire en premier.** Les 4 domaines et leurs pondérations sont vérifiés, mais les 25 sous-objectifs
+> de `referentiel.csv` ont été rédigés de mémoire : `learn.microsoft.com` est bloqué par le proxy réseau
+> de l'environnement Claude, la page officielle n'a pas pu être lue. Ouvre le study guide depuis ton poste
+> et recale la colonne `objectif` ligne à ligne avant de t'en servir comme plan de travail.
+
+## Langue
+
+L'examen se passe en anglais. **Toutes les dénominations d'interface, de pages, de champs et de tables
+sont écrites en anglais** dans le référentiel, les labs et les journaux. Le français reste la langue du
+raisonnement et des notes. La base de test étant en français, chaque lab porte un **lexique EN → FR**
+isolé en dernière section, et `lexique.csv` en cumule les termes.
+
+C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie est une cause d'erreur
+à part entière dans `erreurs.csv`.
+
+## Fichiers
+
+| Fichier | Rôle |
+|---|---|
+| `referentiel.csv` | Les 25 objectifs, ton niveau de confiance sur chacun, leur statut. C'est le tableau de bord. |
+| `planning.md` | Rétroplanning 10 semaines, pondéré par le poids des domaines. Provisoire jusqu'à l'auto-évaluation. |
+| `journal.csv` | Une ligne par session de travail. |
+| `erreurs.csv` | Une ligne par erreur commise en quiz ou en blanc. Le fichier le plus utile du dispositif. |
+| `lexique.csv` | Termes d'interface EN → FR, cumulés au fil des labs. |
+| `labs/` | Les labs pratiques, un par objectif, générés par l'agent `mb800-lab`. |
+
+## Conventions de saisie
+
+- `confiance` : `0` jamais vu · `1` notion floue · `2` je sais faire en cherchant · `3` je paramètre sans documentation.
+- `statut` : `a_evaluer` → `a_travailler` → `en_cours` → `acquis`.
+- `cause` (erreurs) : `connaissance` · `confusion` · `lecture` · `terminologie` · `piege_examen`.
+- `type` (journal) : `lecture` · `pratique` · `lab` · `quiz` · `blanc`.
+- Dates au format `YYYY-MM-DD`. Champ non renseigné = `NA`, jamais de valeur devinée.
+- Plusieurs objectifs dans une même cellule : séparateur `;` (ex. `2.6;2.7`).
+
+## Boucle de travail
+
+1. Générer le lab d'un objectif : agent `mb800-lab`, en lui passant l'id (ex. `2.6`).
+2. L'exécuter sur la base de test. Jamais sur la production.
+3. Répondre aux 3 questions de contrôle du lab.
+4. Journaliser la session dans `journal.csv`.
+5. Verser chaque réponse fausse dans `erreurs.csv`, avec sa cause.
+6. Fiche de connaissance dans Obsidian (skill `obsidian-fiche`) **seulement si l'objectif résiste** après le lab.
+7. Mettre à jour `confiance` et `statut` dans `referentiel.csv`.
+
+Un objectif ne passe `acquis` qu'après un lab exécuté **et** trois questions de contrôle réussies.
+La lecture seule ne suffit jamais.
+
+## Répartition des rôles
+
+Ce dépôt porte **le pilotage et la pratique**. Les fiches de connaissance vivent dans le coffre Obsidian :
+pas de duplication du savoir, pas de backlinks cassés.
+
+## Prochaines actions
+
+- [ ] Figer la date d'examen en tête de ce fichier et l'inscrire dans `planning.md`.
+- [ ] Recaler les 25 objectifs sur le study guide officiel.
+- [ ] Auto-évaluer les 25 objectifs (`confiance`, `date_evaluation`, `statut`) — semaine du 21/09.
+- [ ] Réordonner `planning.md` : fort poids et faible confiance en premier.
+- [ ] Décider si l'agent `mb800-quiz` vaut le coup, une fois le référentiel priorisé.
