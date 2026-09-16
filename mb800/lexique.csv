@@ -1,32 +1,257 @@
-terme_en,libelle_fr,page,objectif,remarque
-Dimension,à confirmer sur ta base,NA,1.4,Page de liste des dimensions
-Dimension Value,à confirmer sur ta base,NA,1.4,NA
-Dimension Value Type,à confirmer sur ta base,NA,1.4,"`Standard`, `Heading`, `Total`, `Begin-Total`, `End-Total`"
-Blocked,à confirmer sur ta base,NA,1.4,Champ présent sur la dimension value
-Global Dimension,à confirmer sur ta base,NA,1.4,Paramétré dans `General Ledger Setup`
-Shortcut Dimension,à confirmer sur ta base,NA,1.4,Numérotées 1 à 8
-Default Dimension,à confirmer sur ta base,NA,1.4,"Posée sur customer, vendor, item, G/L account…"
-Value Posting,à confirmer sur ta base,NA,1.4,"`Code Mandatory`, `Same Code`, `No Code`"
-Default Dimension Priorities,à confirmer sur ta base,NA,1.4,Par source code
-Dimension Combinations,à confirmer sur ta base,NA,1.4,Matrice `Blocked` / `Limited`
-Dimension Set ID,à confirmer sur ta base,NA,1.4,Champ sur les entries
-General Journal,à confirmer sur ta base,NA,1.4,NA
-G/L Entries,à confirmer sur ta base,NA,1.4,NA
-G/L Account,à confirmer sur ta base,NA,1.4,NA
-General Ledger Setup,à confirmer sur ta base,NA,1.4,NA
-Analysis by Dimensions,à confirmer sur ta base,NA,1.4,Nécessite une analysis view à jour
-Analysis View,à confirmer sur ta base,NA,1.4,NA
-Customer,à confirmer sur ta base,NA,1.4,NA
-Vendor,à confirmer sur ta base,NA,1.4,NA
-Tell Me,à confirmer sur ta base,NA,1.4,`Alt+Q`
-Chart of Accounts,à confirmer sur ta base,NA,1.4,Page de liste des comptes généraux
-Dimension Code,à confirmer sur ta base,NA,1.4,Champ des default dimensions
-Dimension Value Code,à confirmer sur ta base,NA,1.4,Champ des default dimensions
-Dimension Values,à confirmer sur ta base,NA,1.4,Page des valeurs d'une dimension
-General Journals,à confirmer sur ta base,NA,1.4,Page de liste des feuilles
-Global Dimension 1 Code,à confirmer sur ta base,NA,1.4,Champ de `General Ledger Setup`
-Global Dimension 2 Code,à confirmer sur ta base,NA,1.4,Champ de `General Ledger Setup`
-New,à confirmer sur ta base,NA,1.4,Action de ruban
-Post,à confirmer sur ta base,NA,1.4,Action de validation
-Related,à confirmer sur ta base,NA,1.4,Groupe de ruban donnant accès aux pages liées
-Role Center,à confirmer sur ta base,NA,1.4,Page d'accueil selon le profil
+terme_en,libelle_fr,page,labs,remarque
+Account Category,à confirmer sur ta base,NA,2.1-finance-setup,Champ du `G/L Account Card`
+Account No.,à confirmer sur ta base,NA,2.7-cash-management;2.8-fixed-assets-setup,Champ de journal
+Account Schedules,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Ancien nom, encore rencontré sur certaines bases on-prem et énoncés d'examen"
+Account Type,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management;2.8-fixed-assets-setup,"`Posting`, `Heading`, `Total`, `Begin-Total`, `End-Total`"
+Accounting Periods,à confirmer sur ta base,NA,2.1-finance-setup,Page du calendrier comptable
+Accum. Depreciation Account,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de FA Posting Group
+Acquisition Cost,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Valeur de FA Posting Type
+Acquisition Cost Account,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de FA Posting Group
+Additional Fee,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Champ de la ligne de niveau, `Reminder Terms` ou `Finance Charge Terms`"
+Additional Fee Account,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ du `Customer Posting Group`
+Additional Reporting Currency,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de `General Ledger Setup`
+Additional-Currency Amount,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la `G/L Entry`
+Adjust Exchange Rates,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Traitement de régularisation de change
+Adjust for Payment Discount,à confirmer sur ta base,NA,2.5-payment-discounts,Impact sur le recalcul de TVA
+Admin Center,à confirmer sur ta base,NA,2.1-finance-setup,"Console Cloud, hors périmètre on-prem"
+Allow Posting From,à confirmer sur ta base,NA,2.1-finance-setup,Champ de `General Ledger Setup` / `User Setup`
+Allow Posting To,à confirmer sur ta base,NA,2.1-finance-setup,Champ de `General Ledger Setup` / `User Setup`
+Amount,à confirmer sur ta base,NA,2.6-vat-posting-setup;2.8-fixed-assets-setup,Valeur de `Amount Type`
+Amount Type,à confirmer sur ta base,NA,2.6-vat-posting-setup;2.9-financial-reports-analysis-views,"`Base` ou `Amount`, sur une ligne de `VAT Statement`"
+Analysis by Dimensions,à confirmer sur ta base,NA,1.4-dimensions;2.9-financial-reports-analysis-views,Nécessite une analysis view à jour
+Analysis View,à confirmer sur ta base,NA,1.4-dimensions;2.9-financial-reports-analysis-views,Vue en cache par compte et par dimension
+Analysis View Name,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Champ reliant une `Row Definition` (ou le `Financial Report`, selon version) à une `Analysis View`"
+Analysis Views,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Page de liste
+Apply Entries,à confirmer sur ta base,NA,2.3-currency-exchange-rates;2.5-payment-discounts,Action d'application d'un règlement
+Assets,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+Bal. Account No.,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management;2.8-fixed-assets-setup,Champ du `Gen. Journal Batch`
+Bal. Account Type,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management;2.8-fixed-assets-setup,Champ du `Gen. Journal Batch`
+Bank Acc. Posting Group,à confirmer sur ta base,NA,2.7-cash-management,Champ de la fiche Bank Accounts
+Bank Acc. Reconciliation,à confirmer sur ta base,NA,2.7-cash-management,NA
+Bank Account,à confirmer sur ta base,NA,2.1-finance-setup;2.3-currency-exchange-rates;2.7-cash-management,Type d'entries éligible à l'ajustement
+Bank Account Ledger Entries,à confirmer sur ta base,NA,2.7-cash-management,NA
+Bank Account No.,à confirmer sur ta base,NA,2.7-cash-management,Champ de la Bank Acc. Reconciliation
+Bank Account Posting Groups,à confirmer sur ta base,NA,2.7-cash-management,Page de liste
+Bank Accounts,à confirmer sur ta base,NA,2.7-cash-management,Page de liste
+Bank Feeds,à confirmer sur ta base,NA,2.7-cash-management,"Connecteur bancaire, hors périmètre on-prem"
+Base,à confirmer sur ta base,NA,2.6-vat-posting-setup,Valeur de `Amount Type`
+Batch,à confirmer sur ta base,NA,2.7-cash-management,NA
+Batch Name,à confirmer sur ta base,NA,2.1-finance-setup,Sélecteur en tête de `General Journals`
+Batches,à confirmer sur ta base,NA,2.1-finance-setup,Accès aux `Gen. Journal Batches` d'un template
+Begin-Total,à confirmer sur ta base,NA,2.1-finance-setup,Valeur du champ `Account Type`
+Blocked,à confirmer sur ta base,NA,1.4-dimensions;2.3-currency-exchange-rates,Champ présent sur la dimension value
+Calc. Pmt. Disc. on Cr. Memos,à confirmer sur ta base,NA,2.5-payment-discounts,Champ du `Payment Terms`
+Calculate Depreciation,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Traitement qui propose des lignes de dépréciation
+Cancel,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Action d'annulation d'un document émis
+Cash Receipt Journals,à confirmer sur ta base,NA,2.3-currency-exchange-rates,NA
+Chart of Accounts,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.6-vat-posting-setup;2.7-cash-management,Page de liste des comptes généraux
+Close Year,à confirmer sur ta base,NA,2.1-finance-setup,Action de `Accounting Periods`
+Closed,à confirmer sur ta base,NA,2.1-finance-setup,Champ de la période comptable
+Code,à confirmer sur ta base,NA,2.3-currency-exchange-rates;2.6-vat-posting-setup;2.7-cash-management;2.9-financial-reports-analysis-views,Champ d'identifiant de la devise
+Column Definition,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Instance d'une `Column Definitions`
+Column Definitions,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Anciennement `Column Layouts`
+Column Header,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Intitulé de colonne affiché
+Column Type,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,`Net Change` et autres périodes
+Cost of Goods Sold,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+Create Finance Charge Memos,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Traitement (batch job)
+Create Fiscal Year,à confirmer sur ta base,NA,2.1-finance-setup,Action de `Accounting Periods`
+Create Reminders,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Traitement (batch job)
+Currencies,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Page de liste des devises
+Currency,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Fiche d'une devise
+Currency Code,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ du document de vente
+Currency Exchange Rates,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Page des taux de change
+Customer,à confirmer sur ta base,NA,1.4-dimensions;2.3-currency-exchange-rates,NA
+Customer Ledger Entries,à confirmer sur ta base,NA,2.3-currency-exchange-rates,NA
+Customer Posting Group,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup,"Specific posting group, posé sur le customer"
+Customer Posting Groups,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup,Page de liste
+Customers,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup;2.6-vat-posting-setup,Page de liste
+Default Dimension,à confirmer sur ta base,NA,1.4-dimensions,"Posée sur customer, vendor, item, G/L account…"
+Default Dimension Priorities,à confirmer sur ta base,NA,1.4-dimensions,Par source code
+Depreciation,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Valeur de FA Posting Type
+Depreciation Book,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Entité de méthode/calendrier de dépréciation
+Depreciation Books,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Page de liste des books
+Depreciation Books (FA),à confirmer sur ta base,NA,2.8-fixed-assets-setup,Sous-page rattachant un Depreciation Book à une Fixed Asset Card
+Depreciation Expense Acc.,à confirmer sur ta base,NA,2.8-fixed-assets-setup,"Champ de FA Posting Group, volontairement laissé vide en 3.1"
+Depreciation Method,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de la FA Depreciation Book
+Depreciation Starting Date,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de la FA Depreciation Book
+Description,à confirmer sur ta base,NA,2.6-vat-posting-setup;2.9-financial-reports-analysis-views,Champ libre associé à un `Code`
+Detailed Customer Ledger Entries,à confirmer sur ta base,NA,2.3-currency-exchange-rates,NA
+Difference,à confirmer sur ta base,NA,2.7-cash-management,Champ de ligne et d'en-tête
+Dimension,à confirmer sur ta base,NA,1.4-dimensions,Page de liste des dimensions
+Dimension Code,à confirmer sur ta base,NA,1.4-dimensions,Champ des default dimensions
+Dimension Combinations,à confirmer sur ta base,NA,1.4-dimensions,Matrice `Blocked` / `Limited`
+Dimension Set,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Regroupement des dimensions non globales portées par une écriture
+Dimension Set ID,à confirmer sur ta base,NA,1.4-dimensions,Champ sur les entries
+Dimension Value,à confirmer sur ta base,NA,1.4-dimensions,NA
+Dimension Value Code,à confirmer sur ta base,NA,1.4-dimensions,Champ des default dimensions
+Dimension Value Type,à confirmer sur ta base,NA,1.4-dimensions,"`Standard`, `Heading`, `Total`, `Begin-Total`, `End-Total`"
+Dimension Values,à confirmer sur ta base,NA,1.4-dimensions,Page des valeurs d'une dimension
+Dimension X Code,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Champ de l'`Analysis View`, un par emplacement 1 à 4"
+Dimension X Totaling,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Filtre de valeur de dimension sur une ligne, un par emplacement 1 à 4"
+Direct Posting,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management,Champ du `G/L Account Card`
+Discount %,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Champ de `Payment Terms`
+Discount Date Calculation,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Champ de `Payment Terms`
+Disposal,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Valeur de FA Posting Type
+Document No.,à confirmer sur ta base,NA,2.1-finance-setup;2.3-currency-exchange-rates,Champ de ligne de journal
+Document Type,à confirmer sur ta base,NA,2.7-cash-management,NA
+Due Date,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la facture de vente
+Due Date Calculation,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Champ de `Payment Terms`
+End-Total,à confirmer sur ta base,NA,2.1-finance-setup,Valeur du champ `Account Type`
+Entry Type,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Distingue Unrealized/Realized
+Equity,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+Exchange Rate Amount,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la ligne de taux
+Expense,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+FA G/L Journals,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Journal de comptabilisation des mouvements FA avec impact G/L
+FA Journals,à confirmer sur ta base,NA,2.8-fixed-assets-setup,"Journal FA sans impact G/L, nom exact à confirmer"
+FA Ledger Entries,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Écritures FA
+FA Posting Group,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ posé sur la Fixed Asset Card
+FA Posting Groups,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Page de liste des groupes de comptabilisation FA
+FA Posting Type,à confirmer sur ta base,NA,2.8-fixed-assets-setup,"Acquisition Cost, Depreciation, Disposal..."
+Fin. Charge Terms Code,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la fiche client
+Finance Charge Memo,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Document non émis
+Finance Charge Terms,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Page de liste et enregistrement
+Financial Report,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Instance assemblant une `Row Definition` et une `Column Definition`
+Financial Reports,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Nom actuel de la fonctionnalité ; anciennement `Account Schedules`
+Fixed Asset Card,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Fiche d'un actif
+Fixed Assets,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Page de liste des immobilisations
+Full VAT,à confirmer sur ta base,NA,2.6-vat-posting-setup,Valeur de `VAT Calculation Type`
+G/L Account,à confirmer sur ta base,NA,1.4-dimensions;2.2-posting-groups;2.4-accounts-receivable-setup;2.5-payment-discounts;2.6-vat-posting-setup;2.7-cash-management;2.8-fixed-assets-setup;2.9-financial-reports-analysis-views,NA
+G/L Account Card,à confirmer sur ta base,NA,2.1-finance-setup,Fiche d'un compte général
+G/L Account Categories,à confirmer sur ta base,NA,2.1-finance-setup,Page de catégorisation pour les états financiers
+G/L Account No.,à confirmer sur ta base,NA,2.7-cash-management,Champ du Bank Account Posting Groups
+G/L Accounts,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Comptes généraux dédiés aux écarts
+G/L Entries,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.2-posting-groups;2.4-accounts-receivable-setup;2.5-payment-discounts;2.6-vat-posting-setup;2.8-fixed-assets-setup;2.9-financial-reports-analysis-views,Écritures comptables générales
+G/L Entry,à confirmer sur ta base,NA,2.3-currency-exchange-rates,NA
+G/L Integration,à confirmer sur ta base,NA,2.8-fixed-assets-setup,"Section du Depreciation Book, par type de mouvement"
+Gains Acc. on Disposal,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de FA Posting Group
+Gen. Bus. Posting Group,à confirmer sur ta base,NA,2.2-posting-groups,"Posé sur customer, vendor"
+Gen. Business Posting Group,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Famille de groupe distincte, hors TVA"
+Gen. Prod. Posting Group,à confirmer sur ta base,NA,2.2-posting-groups,"Posé sur item, G/L account, resource"
+Gen. Product Posting Group,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Famille de groupe distincte, hors TVA"
+General Business Posting Groups,à confirmer sur ta base,NA,2.2-posting-groups,Page de liste
+General Journal,à confirmer sur ta base,NA,1.4-dimensions;2.7-cash-management,NA
+General Journal Templates,à confirmer sur ta base,NA,2.1-finance-setup,Page de liste des templates de journal
+General Journals,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.3-currency-exchange-rates;2.9-financial-reports-analysis-views,Page de liste des feuilles
+General Ledger Setup,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.3-currency-exchange-rates;2.5-payment-discounts;2.9-financial-reports-analysis-views,Page de paramétrage général
+General Posting Setup,à confirmer sur ta base,NA,2.2-posting-groups,Matrice `Gen. Bus. Posting Group` x `Gen. Prod. Posting Group`
+General Product Posting Groups,à confirmer sur ta base,NA,2.2-posting-groups,Page de liste
+Global Dimension,à confirmer sur ta base,NA,1.4-dimensions,Paramétré dans `General Ledger Setup`
+Global Dimension 1 Code,à confirmer sur ta base,NA,1.4-dimensions;2.9-financial-reports-analysis-views,Champ de `General Ledger Setup`
+Global Dimension 2 Code,à confirmer sur ta base,NA,1.4-dimensions;2.9-financial-reports-analysis-views,Champ de `General Ledger Setup`
+Grace Period,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Champ de la ligne de niveau, `Reminder Terms`"
+Heading,à confirmer sur ta base,NA,2.1-finance-setup,Valeur du champ `Account Type`
+Income,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+Income/Balance,à confirmer sur ta base,NA,2.1-finance-setup,`Income Statement` ou `Balance Sheet`
+Interest Account,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ du `Customer Posting Group`
+Interest Period (Days),à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de `Finance Charge Terms`
+Interest Rate,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la ligne de niveau ou des `Finance Charge Terms`
+Inventory Posting Group,à confirmer sur ta base,NA,2.2-posting-groups,Posé sur l'item
+Inventory Posting Setup,à confirmer sur ta base,NA,2.2-posting-groups,Matrice `Location Code` x `Inventory Posting Group`
+Invoicing,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Onglet de la fiche customer, chemin à confirmer"
+Invoicing FastTab,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup,Onglet des fiches client/item portant les posting groups
+Issue,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Action d'émission
+Issued Finance Charge Memo,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Document émis, définitif"
+Issued Reminder,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Document émis, définitif"
+Items,à confirmer sur ta base,NA,2.2-posting-groups,Page de liste
+Last Date Updated,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Champ de traçabilité du dernier `Update`
+LCY,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Devise locale de la société
+Ledger Entry Type,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"`Entries`, `Budget Entries`"
+Liabilities,à confirmer sur ta base,NA,2.1-finance-setup,Valeur fixe de `Account Category`
+Losses Acc. on Disposal,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de FA Posting Group
+Making Tax Digital (VAT),à confirmer sur ta base,NA,2.6-vat-posting-setup,"Mentionné en théorie, hors périmètre du lab"
+Name,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management;2.9-financial-reports-analysis-views,"Champ de libellé, présent sur plusieurs pages"
+Navigate,à confirmer sur ta base,NA,2.2-posting-groups;2.6-vat-posting-setup,Action retrouvant toutes les écritures d'un document
+New,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.2-posting-groups;2.3-currency-exchange-rates;2.4-accounts-receivable-setup;2.5-payment-discounts;2.6-vat-posting-setup;2.7-cash-management;2.8-fixed-assets-setup,Action de ruban
+New Fiscal Year,à confirmer sur ta base,NA,2.1-finance-setup,Champ coché sur la première période d'un exercice
+No.,à confirmer sur ta base,NA,2.1-finance-setup;2.7-cash-management,Champ d'identifiant du compte
+No. of Depreciation Years,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Champ de la FA Depreciation Book
+No. of Periods,à confirmer sur ta base,NA,2.1-finance-setup,Champ du dialogue `Create Fiscal Year`
+No. Series,à confirmer sur ta base,NA,2.1-finance-setup,Champ présent sur le template et le batch
+Normal VAT,à confirmer sur ta base,NA,2.6-vat-posting-setup,Valeur de `VAT Calculation Type`
+Payables Account,à confirmer sur ta base,NA,2.5-payment-discounts,Compte de dette fournisseur
+Payment,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Onglet de la facture de vente portant `Due Date`, `Pmt. Discount Date`"
+Payment Disc. Credit Acc.,à confirmer sur ta base,NA,2.5-payment-discounts,Champ du posting group
+Payment Disc. Debit Acc.,à confirmer sur ta base,NA,2.5-payment-discounts,Champ du posting group
+Payment Discount Grace Period,à confirmer sur ta base,NA,2.5-payment-discounts,Lié au `Payment Tolerance`
+Payment Journal,à confirmer sur ta base,NA,2.5-payment-discounts,NA
+Payment Journals,à confirmer sur ta base,NA,2.7-cash-management,NA
+Payment Method,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Enregistrement individuel
+Payment Method Code,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la fiche client
+Payment Methods,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Page de liste
+Payment Reconciliation Journal,à confirmer sur ta base,NA,2.7-cash-management,Page distincte de la Bank Acc. Reconciliation
+Payment Term,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Enregistrement individuel
+Payment Terms,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Page de liste
+Payment Terms Code,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Champ de la fiche client
+Payment Tolerance %,à confirmer sur ta base,NA,2.5-payment-discounts,À ne pas confondre avec l'escompte
+Payments FastTab,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,"Onglet de la fiche client portant `Reminder Terms Code`, `Fin. Charge Terms Code`"
+Period Length,à confirmer sur ta base,NA,2.1-finance-setup,Champ du dialogue `Create Fiscal Year`
+Pmt. Discount Amount,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la facture de vente
+Pmt. Discount Date,à confirmer sur ta base,NA,2.4-accounts-receivable-setup;2.5-payment-discounts,Champ de la facture de vente
+Post,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.2-posting-groups;2.3-currency-exchange-rates;2.4-accounts-receivable-setup;2.5-payment-discounts;2.6-vat-posting-setup;2.7-cash-management;2.8-fixed-assets-setup;2.9-financial-reports-analysis-views,Action de validation
+Post Additional Fee,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de `Finance Charge Terms`
+Post Interest,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de `Finance Charge Terms`
+Posted Sales Invoices,à confirmer sur ta base,NA,2.2-posting-groups;2.6-vat-posting-setup,Page de liste
+Posting,à confirmer sur ta base,NA,2.1-finance-setup;2.6-vat-posting-setup;2.7-cash-management,Valeur du champ `Account Type`
+Posting Date,à confirmer sur ta base,NA,2.1-finance-setup;2.3-currency-exchange-rates;2.5-payment-discounts;2.8-fixed-assets-setup,Champ de ligne de journal
+Preview,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Action d'aperçu d'un `Financial Report`, libellé variable selon version"
+Purchase Invoices,à confirmer sur ta base,NA,2.5-payment-discounts,Page de liste
+Purchase VAT Account,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la ligne de `VAT Posting Setup`
+Purchases & Payables Setup,à confirmer sur ta base,NA,2.5-payment-discounts,NA
+Realized Gains Acc.,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la fiche `Currency`
+Realized Losses Acc.,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la fiche `Currency`
+Receivables Account,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup,Champ du `Customer Posting Group`
+Recurring,à confirmer sur ta base,NA,2.1-finance-setup,Champ du `Gen. Journal Template`
+Recurring Method,à confirmer sur ta base,NA,2.1-finance-setup,"Champ de ligne de journal, requis si le template est `Recurring`"
+Related,à confirmer sur ta base,NA,1.4-dimensions;2.8-fixed-assets-setup,Groupe de ruban donnant accès aux pages liées
+Relational Exch. Rate Amount,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la ligne de taux
+Remaining Amount,à confirmer sur ta base,NA,2.7-cash-management,NA
+Remaining Pmt. Disc. Possible,à confirmer sur ta base,NA,2.5-payment-discounts,Champ calculé sur l'écriture
+Reminder,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Document non émis
+Reminder Terms,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Page de liste et enregistrement
+Reminder Terms Code,à confirmer sur ta base,NA,2.4-accounts-receivable-setup,Champ de la fiche client
+Residual Gains Account,à confirmer sur ta base,NA,2.3-currency-exchange-rates,"Écart d'arrondi, pas un écart de change"
+Residual Losses Account,à confirmer sur ta base,NA,2.3-currency-exchange-rates,"Écart d'arrondi, pas un écart de change"
+Reverse Charge VAT,à confirmer sur ta base,NA,2.6-vat-posting-setup,Valeur de `VAT Calculation Type`
+Role Center,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.5-payment-discounts;2.8-fixed-assets-setup,Page d'accueil selon le profil
+Row Definition,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Instance d'une `Row Definitions`
+Row Definitions,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Anciennement `Account Schedule Names`
+Row Type,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Nature de la ligne (comptes, formule, etc.)"
+Run,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,"Action d'aperçu d'un `Financial Report`, libellé variable selon version"
+Sales Account,à confirmer sur ta base,NA,2.2-posting-groups,Champ de `General Posting Setup`
+Sales Invoice,à confirmer sur ta base,NA,2.3-currency-exchange-rates;2.6-vat-posting-setup,Document de vente
+Sales Invoices,à confirmer sur ta base,NA,2.2-posting-groups;2.4-accounts-receivable-setup,Page de liste
+Sales VAT Account,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la ligne de `VAT Posting Setup`
+Sell-to Customer No.,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ d'en-tête de la facture
+Set Applies-to ID,à confirmer sur ta base,NA,2.5-payment-discounts,NA
+Shortcut Dimension,à confirmer sur ta base,NA,1.4-dimensions,Numérotées 1 à 8
+Starting Date,à confirmer sur ta base,NA,2.1-finance-setup;2.3-currency-exchange-rates,Champ de la période comptable
+Statement Date,à confirmer sur ta base,NA,2.7-cash-management,NA
+Statement Ending Balance,à confirmer sur ta base,NA,2.7-cash-management,Champ d'en-tête
+Statement No.,à confirmer sur ta base,NA,2.7-cash-management,NA
+Straight-Line,à confirmer sur ta base,NA,2.8-fixed-assets-setup,Valeur de Depreciation Method
+Suggest Lines,à confirmer sur ta base,NA,2.7-cash-management,Action de la Bank Acc. Reconciliation
+Tell Me,à confirmer sur ta base,NA,1.4-dimensions;2.1-finance-setup;2.2-posting-groups;2.3-currency-exchange-rates;2.4-accounts-receivable-setup;2.5-payment-discounts;2.6-vat-posting-setup;2.7-cash-management;2.8-fixed-assets-setup;2.9-financial-reports-analysis-views,`Alt+Q`
+Total,à confirmer sur ta base,NA,2.1-finance-setup,Valeur du champ `Account Type`
+Totaling,à confirmer sur ta base,NA,2.1-finance-setup;2.9-financial-reports-analysis-views,Filtre de sommation sur un compte `Total`
+Type,à confirmer sur ta base,NA,2.1-finance-setup;2.6-vat-posting-setup,Champ du `Gen. Journal Template`
+Unrealized Gains Acc.,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la fiche `Currency`
+Unrealized Losses Acc.,à confirmer sur ta base,NA,2.3-currency-exchange-rates,Champ de la fiche `Currency`
+Update,à confirmer sur ta base,NA,2.9-financial-reports-analysis-views,Action de rafraîchissement de l'`Analysis View`
+User Setup,à confirmer sur ta base,NA,2.1-finance-setup,Page de paramétrage par utilisateur
+Value Posting,à confirmer sur ta base,NA,1.4-dimensions,"`Code Mandatory`, `Same Code`, `No Code`"
+VAT %,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la ligne de `VAT Posting Setup`
+VAT Bus. Posting Group,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la fiche customer
+VAT Business Posting Groups,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Page de liste, action `New`"
+VAT Calculation Type,à confirmer sur ta base,NA,2.6-vat-posting-setup,"`Normal VAT`, `Reverse Charge VAT`, `Full VAT`…"
+VAT Entries,à confirmer sur ta base,NA,2.6-vat-posting-setup,Écritures de TVA liées à une facture postée
+VAT Identifier,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la ligne de `VAT Posting Setup`
+VAT Posting Setup,à confirmer sur ta base,NA,2.6-vat-posting-setup,Matrice croisant les deux groupes TVA
+VAT Prod. Posting Group,à confirmer sur ta base,NA,2.6-vat-posting-setup,Champ sur la fiche G/L Account
+VAT Product Posting Groups,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Page de liste, action `New`"
+VAT Return Periods,à confirmer sur ta base,NA,2.6-vat-posting-setup,"Mentionné en théorie, hors périmètre du lab"
+VAT Statement,à confirmer sur ta base,NA,2.6-vat-posting-setup,Page de déclaration
+Vendor,à confirmer sur ta base,NA,1.4-dimensions;2.3-currency-exchange-rates;2.7-cash-management,Type d'entries éligible à l'ajustement
+Vendor Ledger Entries,à confirmer sur ta base,NA,2.5-payment-discounts,NA
+Vendor Posting Group,à confirmer sur ta base,NA,2.5-payment-discounts,Champ de la vendor card
+Vendor Posting Groups,à confirmer sur ta base,NA,2.5-payment-discounts,Page de liste
+Vendors,à confirmer sur ta base,NA,2.5-payment-discounts,Page de liste des fournisseurs
