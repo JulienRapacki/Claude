@@ -95,6 +95,26 @@ def meta_table(html):
     return html[: m.start()] + f'<table class="meta">{tbl}</table>' + html[m.end() :]
 
 
+def expand_nav(text):
+    """{nav: A > B > (condition) > C}  ->  fil d'Ariane. Un '?' final = chemin douteux."""
+
+    def repl(m):
+        path = m.group(1).strip()
+        doubt = path.endswith("?")
+        path = path.rstrip("? ").strip()
+        chunks = []
+        for step in [p.strip() for p in path.split(">") if p.strip()]:
+            cls = "cond" if step.startswith("(") and step.endswith(")") else "step"
+            chunks.append(f'<span class="{cls}">{step}</span>')
+        body = '<span class="sep">&rsaquo;</span>'.join(chunks)
+        if doubt:
+            body += '<span class="doubt">chemin à confirmer sur ta base</span>'
+        cls = "nav nav-doubt" if doubt else "nav"
+        return f'<div class="{cls}">{body}</div>'
+
+    return re.sub(r"^\{nav:\s*(.+?)\}\s*$", repl, text, flags=re.M)
+
+
 def postprocess(html):
     html = meta_table(html)
     return checklists(html)
@@ -116,7 +136,7 @@ def checklists(html):
 def build_html(md_path):
     raw = md_path.read_text(encoding="utf-8")
     body = markdown.markdown(
-        expand_callouts(raw),
+        expand_nav(expand_callouts(raw)),
         extensions=["tables", "fenced_code", "attr_list", "md_in_html", "sane_lists"],
     )
     body = postprocess(body)

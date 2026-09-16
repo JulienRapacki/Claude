@@ -15,7 +15,7 @@ Contrat de mise en page respecté par l'agent `doc-didactique` **et** par le con
 
 ## 1. Praticabilité on-prem
 ## 2. Pré-requis          (checklist)
-## 3. Mission             (étapes numérotées)
+## 3. Mission             (sous-sections ###, chemin {nav:} + actions champ/valeur)
 ## 4. Points de contrôle  (checklist)
 ## 5. Pièges d'examen     (callouts [!piege])
 ## 6. Questions de contrôle (EN) + bloc réponses
@@ -40,6 +40,40 @@ Syntaxe Obsidian, un type par bloc :
 | `piege` | Confusion classique sanctionnée à l'examen | Encadré ambre |
 | `astuce` | Raccourci de terrain, non exigible à l'examen | Encadré vert |
 | `reponses` | Corrigé des questions de contrôle | Encadré + saut de page avant |
+
+## Chemins d'accès
+
+Syntaxe dédiée, sur sa propre ligne, avant les actions qu'elle rend possibles :
+
+```
+{nav: Tell Me (Alt+Q) > Dimensions > New}
+{nav: Sales > Customers > (sélectionner le client) > Navigate > Dimensions ?}
+```
+
+- Séparateur `>`. Rendu en fil d'Ariane accentué, détaché du texte : le chemin doit se voir sans lire.
+- Une étape entre parenthèses décrit une sélection ou une condition, pas un clic de menu.
+- Les chemins donnés en exemple dans ce gabarit sont **illustratifs, pas vérifiés** : ne les recopie
+  jamais dans un lab sans les marquer.
+- **Un `?` en fin de chemin marque un chemin non certain.** Il se rend en gris avec la mention
+  « chemin à confirmer ». Mieux vaut un chemin marqué douteux qu'un chemin faux affirmé.
+
+## Format d'une étape de mission
+
+Une sous-section `###` par étape, puis le chemin, puis les actions. Une action = un champ, une valeur :
+
+```
+### 3.2 Poser la default dimension sur le client
+
+{nav: Sales > Customers > (ouvrir le client) > Related > Customer > Dimensions}
+
+- Dans `Dimension Code`, sélectionne `PROJECT`.
+- Dans `Value Posting`, sélectionne `Code Mandatory`.
+- Laisse `Dimension Value Code` vide.
+```
+
+Les étapes mécaniques sont entièrement guidées : chemin, champ, valeur. Les étapes qui **constituent
+l'apprentissage** (un arbitrage, un diagnostic, une prévision de comportement) gardent leur formulation
+ouverte — on donne le chemin vers la bonne page, jamais la réponse.
 
 ## Règles de forme
 
