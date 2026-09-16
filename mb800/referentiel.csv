@@ -1,26 +1,126 @@
-id,domaine,poids,objectif,confiance,date_evaluation,statut,note
-1.1,Set up Business Central,20-25,"Create and configure a company (assisted setup, company information, number series)",NA,NA,a_evaluer,NA
-1.2,Set up Business Central,20-25,"Manage security (users, user groups, permission sets, entitlements)",NA,NA,a_evaluer,NA
-1.3,Set up Business Central,20-25,"Set up core app functionality (email, document layouts, job queue, role centers and profiles)",NA,NA,a_evaluer,NA
-1.4,Set up Business Central,20-25,"Set up dimensions (dimensions, dimension values, default dimensions, dimension combinations)",NA,NA,a_evaluer,NA
-1.5,Set up Business Central,20-25,"Migrate data (configuration packages, configuration templates, export and import)",NA,NA,a_evaluer,NA
-1.6,Set up Business Central,20-25,Set up the change log and audit trails,NA,NA,a_evaluer,NA
-2.1,Configure financials,25-30,"Set up finance (chart of accounts, G/L account categories, accounting periods, journal templates and batches)",NA,NA,a_evaluer,NA
-2.2,Configure financials,25-30,"Set up posting groups (general posting setup, business and product posting groups, specific posting groups)",NA,NA,a_evaluer,NA
-2.3,Configure financials,25-30,"Set up currencies (exchange rates, additional reporting currency, exchange rate adjustment)",NA,NA,a_evaluer,NA
-2.4,Configure financials,25-30,"Set up accounts receivable (payment terms and methods, customer posting groups, reminders and finance charges)",NA,NA,a_evaluer,NA
-2.5,Configure financials,25-30,"Set up accounts payable (payment terms, vendor posting groups, payment discounts)",NA,NA,a_evaluer,NA
-2.6,Configure financials,25-30,"Set up VAT (VAT business and product posting groups, VAT posting setup, VAT statements, VAT reporting)",NA,NA,a_evaluer,NA
-2.7,Configure financials,25-30,"Set up cash management (bank accounts, bank account reconciliation, payment journals)",NA,NA,a_evaluer,NA
-2.8,Configure financials,25-30,"Set up fixed assets (fixed asset cards, depreciation books, FA posting groups)",NA,NA,a_evaluer,NA
-2.9,Configure financials,25-30,"Set up financial reporting (financial reports / account schedules, analysis by dimensions)",NA,NA,a_evaluer,NA
-3.1,Configure sales and purchasing,10-15,"Set up inventory (item cards, item categories, units of measure, costing methods, locations)",NA,NA,a_evaluer,NA
-3.2,Configure sales and purchasing,10-15,"Configure sales (customer cards, price lists, line and invoice discounts, salespeople, shipping agents)",NA,NA,a_evaluer,NA
-3.3,Configure sales and purchasing,10-15,"Configure purchasing (vendor cards, purchase prices and discounts, purchasers, purchases and payables setup)",NA,NA,a_evaluer,NA
-4.1,Perform Business Central operations,30-35,"Perform basic tasks (search, filters, personalization, notes and links, Excel/Word/Outlook integration)",NA,NA,a_evaluer,NA
-4.2,Perform Business Central operations,30-35,"Purchase items (quotes, orders, receipts, invoices, returns, credit memos, item charges, drop shipment)",NA,NA,a_evaluer,NA
-4.3,Perform Business Central operations,30-35,"Sell items (quotes, orders, shipments, invoices, blanket orders, returns, credit memos)",NA,NA,a_evaluer,NA
-4.4,Perform Business Central operations,30-35,"Process financial transactions (journals, applying entries, payments, reversals, recurring journals, deferrals)",NA,NA,a_evaluer,NA
-4.5,Perform Business Central operations,30-35,"Perform inventory operations (item journals, physical inventory, transfer orders, adjust cost, reordering policies)",NA,NA,a_evaluer,NA
-4.6,Perform Business Central operations,30-35,"Set up and use jobs (job cards, resources, time sheets, job planning lines, WIP)",NA,NA,a_evaluer,NA
-4.7,Perform Business Central operations,30-35,"Set up and use approval workflows (approval user setup, approval hierarchies, workflow templates)",NA,NA,a_evaluer,NA
+id,domaine,poids,groupe,objectif,confiance,date_evaluation,statut,note
+1.1.1,Set up Business Central,20-25,1.1 Create and configure a company,Create a company by using Assisted Setup,NA,NA,a_evaluer,NA
+1.1.2,Set up Business Central,20-25,1.1 Create and configure a company,Create a configuration worksheet,NA,NA,a_evaluer,NA
+1.1.3,Set up Business Central,20-25,1.1 Create and configure a company,Create and use a configuration package,NA,NA,a_evaluer,NA
+1.1.4,Set up Business Central,20-25,1.1 Create and configure a company,Create journal opening balances,NA,NA,a_evaluer,NA
+1.1.5,Set up Business Central,20-25,1.1 Create and configure a company,Migrate data to and within Business Central,NA,NA,a_evaluer,NA
+1.2.1,Set up Business Central,20-25,1.2 Manage security,Create and assign user profiles,NA,NA,a_evaluer,NA
+1.2.2,Set up Business Central,20-25,1.2 Manage security,Set up a new user,NA,NA,a_evaluer,NA
+1.2.3,Set up Business Central,20-25,1.2 Manage security,Create permissions and permission sets,NA,NA,a_evaluer,NA
+1.2.4,Set up Business Central,20-25,1.2 Manage security,Apply security filters,NA,NA,a_evaluer,NA
+1.2.5,Set up Business Central,20-25,1.2 Manage security,Assign user permissions by using security groups and permission sets,NA,NA,a_evaluer,NA
+1.2.6,Set up Business Central,20-25,1.2 Manage security,Configure and use security auditing in Business Central,NA,NA,a_evaluer,NA
+1.3.1,Set up Business Central,20-25,1.3 Set up core functionality,Set up reports and configure report layouts,NA,NA,a_evaluer,NA
+1.3.2,Set up Business Central,20-25,1.3 Set up core functionality,Set up and use job queues,NA,NA,a_evaluer,NA
+1.3.3,Set up Business Central,20-25,1.3 Set up core functionality,Set up number series,NA,NA,a_evaluer,NA
+1.3.4,Set up Business Central,20-25,1.3 Set up core functionality,Enable Copilot and agent capabilities,NA,NA,a_evaluer,NA
+1.4.1,Set up Business Central,20-25,1.4 Set up dimensions,Set up dimensions and dimension values,NA,NA,a_evaluer,NA
+1.4.2,Set up Business Central,20-25,1.4 Set up dimensions,Set up global dimensions and shortcut dimensions,NA,NA,a_evaluer,NA
+1.4.3,Set up Business Central,20-25,1.4 Set up dimensions,Set up default dimensions for master data,NA,NA,a_evaluer,NA
+1.4.4,Set up Business Central,20-25,1.4 Set up dimensions,Set up blocking combinations of dimensions and dimension values,NA,NA,a_evaluer,NA
+1.4.5,Set up Business Central,20-25,1.4 Set up dimensions,Set up default dimensions for account types,NA,NA,a_evaluer,NA
+1.4.6,Set up Business Central,20-25,1.4 Set up dimensions,Set up default dimension priorities,NA,NA,a_evaluer,NA
+2.1.1,Configure financials,30-35,2.1 Set up financial management,Set up native workflows,NA,NA,a_evaluer,NA
+2.1.2,Configure financials,30-35,2.1 Set up financial management,Set up a notification system,NA,NA,a_evaluer,NA
+2.1.3,Configure financials,30-35,2.1 Set up financial management,Set up users for approval and workflow user groups,NA,NA,a_evaluer,NA
+2.1.4,Configure financials,30-35,2.1 Set up financial management,Configure general ledger setup,NA,NA,a_evaluer,NA
+2.1.5,Configure financials,30-35,2.1 Set up financial management,Configure accounting periods,NA,NA,a_evaluer,NA
+2.1.6,Configure financials,30-35,2.1 Set up financial management,Set up payment terms,NA,NA,a_evaluer,NA
+2.1.7,Configure financials,30-35,2.1 Set up financial management,Set up deferrals,NA,NA,a_evaluer,NA
+2.1.8,Configure financials,30-35,2.1 Set up financial management,Configure currencies including exchange rates,NA,NA,a_evaluer,NA
+2.1.9,Configure financials,30-35,2.1 Set up financial management,Set up payment methods,NA,NA,a_evaluer,NA
+2.1.10,Configure financials,30-35,2.1 Set up financial management,Set up general ledger accounts,NA,NA,a_evaluer,NA
+2.1.11,Configure financials,30-35,2.1 Set up financial management,Set up dimensions,NA,NA,a_evaluer,NA
+2.1.12,Configure financials,30-35,2.1 Set up financial management,Manage approvals by using workflows,NA,NA,a_evaluer,NA
+2.2.1,Configure financials,30-35,2.2 Manage the chart of accounts,Create account categories and subcategories,NA,NA,a_evaluer,NA
+2.2.2,Configure financials,30-35,2.2 Manage the chart of accounts,Prepare financial reporting with financial data and account categories,NA,NA,a_evaluer,NA
+2.2.3,Configure financials,30-35,2.2 Manage the chart of accounts,Set up general ledger allocations,NA,NA,a_evaluer,NA
+2.3.1,Configure financials,30-35,2.3 Set up posting groups,Create specific posting groups,NA,NA,a_evaluer,NA
+2.3.2,Configure financials,30-35,2.3 Set up posting groups,Create general posting groups,NA,NA,a_evaluer,NA
+2.3.3,Configure financials,30-35,2.3 Set up posting groups,Configure the general posting setup,NA,NA,a_evaluer,NA
+2.3.4,Configure financials,30-35,2.3 Set up posting groups,Configure inventory posting setup,NA,NA,a_evaluer,NA
+2.3.5,Configure financials,30-35,2.3 Set up posting groups,Allow multiple posting groups,NA,NA,a_evaluer,NA
+2.4.1,Configure financials,30-35,2.4 Set up journals and bank accounts,Set up bank accounts,NA,NA,a_evaluer,NA
+2.4.2,Configure financials,30-35,2.4 Set up journals and bank accounts,"Create journal templates, including number series",NA,NA,a_evaluer,NA
+2.4.3,Configure financials,30-35,2.4 Set up journals and bank accounts,Create batches,NA,NA,a_evaluer,NA
+2.4.4,Configure financials,30-35,2.4 Set up journals and bank accounts,Create templates for recurring journals,NA,NA,a_evaluer,NA
+2.5.1,Configure financials,30-35,2.5 Set up accounts payables,"Create vendor accounts, including payment terms, vendor bank accounts, and related records",NA,NA,a_evaluer,NA
+2.5.2,Configure financials,30-35,2.5 Set up accounts payables,Configure Purchases & Payables Setup,NA,NA,a_evaluer,NA
+2.5.3,Configure financials,30-35,2.5 Set up accounts payables,Set up payment journals,NA,NA,a_evaluer,NA
+2.5.4,Configure financials,30-35,2.5 Set up accounts payables,"Assess the relationship between vendors, vendor ledger entries, detailed vendor ledger entries, and general ledger entries",NA,NA,a_evaluer,NA
+2.6.1,Configure financials,30-35,2.6 Set up accounts receivables,"Create customer accounts, including payment terms, payment methods, customer bank accounts, and related records",NA,NA,a_evaluer,NA
+2.6.2,Configure financials,30-35,2.6 Set up accounts receivables,Configure Sales & Receivables Setup,NA,NA,a_evaluer,NA
+2.6.3,Configure financials,30-35,2.6 Set up accounts receivables,Set up cash receipt journals,NA,NA,a_evaluer,NA
+2.6.4,Configure financials,30-35,2.6 Set up accounts receivables,Set up payment registration,NA,NA,a_evaluer,NA
+2.6.5,Configure financials,30-35,2.6 Set up accounts receivables,"Assess the relationship between customers, customer ledger entries, detailed customer ledger entries, and general ledger entries",NA,NA,a_evaluer,NA
+2.7.1,Configure financials,30-35,2.7 Configure fixed assets,"Configure fixed asset settings, including depreciation books and fixed asset classes and subclasses",NA,NA,a_evaluer,NA
+2.7.2,Configure financials,30-35,2.7 Configure fixed assets,"Create and modify fixed assets, main assets, and components",NA,NA,a_evaluer,NA
+2.7.3,Configure financials,30-35,2.7 Configure fixed assets,Differentiate between different depreciation methods,NA,NA,a_evaluer,NA
+3.1.1,Configure sales and purchasing,10-15,3.1 Set up inventory,Configure inventory setup,NA,NA,a_evaluer,NA
+3.1.2,Configure sales and purchasing,10-15,3.1 Set up inventory,"Configure core item settings, including item categories, item attributes, units of measure, and item variants",NA,NA,a_evaluer,NA
+3.1.3,Configure sales and purchasing,10-15,3.1 Set up inventory,Create locations,NA,NA,a_evaluer,NA
+3.1.4,Configure sales and purchasing,10-15,3.1 Set up inventory,"Assess the relationship between items, item ledger entries, value entries, and general ledger entries",NA,NA,a_evaluer,NA
+3.1.5,Configure sales and purchasing,10-15,3.1 Set up inventory,Differentiate between costing methods,NA,NA,a_evaluer,NA
+3.1.6,Configure sales and purchasing,10-15,3.1 Set up inventory,Configure stockkeeping units,NA,NA,a_evaluer,NA
+3.2.1,Configure sales and purchasing,10-15,3.2 Configure master data for sales and purchasing,"Configure core customer settings including shipping agents, locations, and shipping addresses",NA,NA,a_evaluer,NA
+3.2.2,Configure sales and purchasing,10-15,3.2 Configure master data for sales and purchasing,"Configure core vendor settings including order address, lead time, and locations",NA,NA,a_evaluer,NA
+3.3.1,Configure sales and purchasing,10-15,3.3 Manage pricing and discounts,Manage vendor purchase prices,NA,NA,a_evaluer,NA
+3.3.2,Configure sales and purchasing,10-15,3.3 Manage pricing and discounts,Manage purchase line and invoice discounts,NA,NA,a_evaluer,NA
+3.3.3,Configure sales and purchasing,10-15,3.3 Manage pricing and discounts,Manage customer sales prices,NA,NA,a_evaluer,NA
+3.3.4,Configure sales and purchasing,10-15,3.3 Manage pricing and discounts,Manage sales line and invoice discounts,NA,NA,a_evaluer,NA
+4.1.1,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,"Differentiate between designing, customizing, and personalizing pages",NA,NA,a_evaluer,NA
+4.1.2,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Customize pages,NA,NA,a_evaluer,NA
+4.1.3,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Apply and save filters,NA,NA,a_evaluer,NA
+4.1.4,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Find documents and related entries,NA,NA,a_evaluer,NA
+4.1.5,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Inspect pages,NA,NA,a_evaluer,NA
+4.1.6,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Perform data updates by using the Edit in Excel feature,NA,NA,a_evaluer,NA
+4.1.7,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Configure and use data analysis mode,NA,NA,a_evaluer,NA
+4.1.8,Perform Business Central operations,30-35,4.1 Perform basic tasks in Business Central,Personalize pages,NA,NA,a_evaluer,NA
+4.2.1,Perform Business Central operations,30-35,4.2 Process purchases,Manage quotes,NA,NA,a_evaluer,NA
+4.2.2,Perform Business Central operations,30-35,4.2 Process purchases,Create a purchase order,NA,NA,a_evaluer,NA
+4.2.3,Perform Business Central operations,30-35,4.2 Process purchases,Receive items for a purchase order,NA,NA,a_evaluer,NA
+4.2.4,Perform Business Central operations,30-35,4.2 Process purchases,Receive more items than ordered,NA,NA,a_evaluer,NA
+4.2.5,Perform Business Central operations,30-35,4.2 Process purchases,Reverse a receipt,NA,NA,a_evaluer,NA
+4.2.6,Perform Business Central operations,30-35,4.2 Process purchases,Create a posted invoice from a purchase order,NA,NA,a_evaluer,NA
+4.2.7,Perform Business Central operations,30-35,4.2 Process purchases,Configure recurring purchase lines,NA,NA,a_evaluer,NA
+4.2.8,Perform Business Central operations,30-35,4.2 Process purchases,Manage blanket purchase orders,NA,NA,a_evaluer,NA
+4.2.9,Perform Business Central operations,30-35,4.2 Process purchases,Use deferrals with purchasing documents,NA,NA,a_evaluer,NA
+4.3.1,Perform Business Central operations,30-35,4.3 Process sales,Manage quotes,NA,NA,a_evaluer,NA
+4.3.2,Perform Business Central operations,30-35,4.3 Process sales,Convert a sales quote into a sales order or sales invoice,NA,NA,a_evaluer,NA
+4.3.3,Perform Business Central operations,30-35,4.3 Process sales,Analyze item availability,NA,NA,a_evaluer,NA
+4.3.4,Perform Business Central operations,30-35,4.3 Process sales,Ship items for a sales order,NA,NA,a_evaluer,NA
+4.3.5,Perform Business Central operations,30-35,4.3 Process sales,Reverse a shipment,NA,NA,a_evaluer,NA
+4.3.6,Perform Business Central operations,30-35,4.3 Process sales,Create a sales invoice from a sales order,NA,NA,a_evaluer,NA
+4.3.7,Perform Business Central operations,30-35,4.3 Process sales,Configure recurring sales lines,NA,NA,a_evaluer,NA
+4.3.8,Perform Business Central operations,30-35,4.3 Process sales,Manage blanket sales orders,NA,NA,a_evaluer,NA
+4.3.9,Perform Business Central operations,30-35,4.3 Process sales,Use deferrals with sales documents,NA,NA,a_evaluer,NA
+4.4.1,Perform Business Central operations,30-35,4.4 Process financial documents,Process purchase invoices,NA,NA,a_evaluer,NA
+4.4.2,Perform Business Central operations,30-35,4.4 Process financial documents,Process purchase credit memos,NA,NA,a_evaluer,NA
+4.4.3,Perform Business Central operations,30-35,4.4 Process financial documents,Process sales invoices,NA,NA,a_evaluer,NA
+4.4.4,Perform Business Central operations,30-35,4.4 Process financial documents,Process sales credit memos,NA,NA,a_evaluer,NA
+4.4.5,Perform Business Central operations,30-35,4.4 Process financial documents,Combine sales shipments into a single sales invoice,NA,NA,a_evaluer,NA
+4.4.6,Perform Business Central operations,30-35,4.4 Process financial documents,Combine purchase receipts into a single purchase invoice,NA,NA,a_evaluer,NA
+4.4.7,Perform Business Central operations,30-35,4.4 Process financial documents,Correct a posted purchase invoice,NA,NA,a_evaluer,NA
+4.4.8,Perform Business Central operations,30-35,4.4 Process financial documents,Correct a posted sales invoice,NA,NA,a_evaluer,NA
+4.4.9,Perform Business Central operations,30-35,4.4 Process financial documents,Release and reopen documents,NA,NA,a_evaluer,NA
+4.4.10,Perform Business Central operations,30-35,4.4 Process financial documents,Process prepayment invoices for purchases and sales,NA,NA,a_evaluer,NA
+4.5.1,Perform Business Central operations,30-35,4.5 Process journals and payments,Process payments by using payment journals,NA,NA,a_evaluer,NA
+4.5.2,Perform Business Central operations,30-35,4.5 Process journals and payments,Process receipts by using the cash receipt journal,NA,NA,a_evaluer,NA
+4.5.3,Perform Business Central operations,30-35,4.5 Process journals and payments,Process payment registrations,NA,NA,a_evaluer,NA
+4.5.4,Perform Business Central operations,30-35,4.5 Process journals and payments,Apply ledger entries and undo applied entries,NA,NA,a_evaluer,NA
+4.5.5,Perform Business Central operations,30-35,4.5 Process journals and payments,Reverse posted journals,NA,NA,a_evaluer,NA
+4.5.6,Perform Business Central operations,30-35,4.5 Process journals and payments,Perform bank account reconciliation,NA,NA,a_evaluer,NA
+4.5.7,Perform Business Central operations,30-35,4.5 Process journals and payments,Process recurring transactions by using the recurring journals,NA,NA,a_evaluer,NA
+4.5.8,Perform Business Central operations,30-35,4.5 Process journals and payments,Use general ledger allocations,NA,NA,a_evaluer,NA
+4.5.9,Perform Business Central operations,30-35,4.5 Process journals and payments,Adjust currency exchange rates,NA,NA,a_evaluer,NA
+4.5.10,Perform Business Central operations,30-35,4.5 Process journals and payments,Correct posted dimensions using the Dimension Correction Tool,NA,NA,a_evaluer,NA
+4.5.11,Perform Business Central operations,30-35,4.5 Process journals and payments,Revalue general ledger account balances,NA,NA,a_evaluer,NA
+4.6.1,Perform Business Central operations,30-35,4.6 Process fixed asset transactions,Process fixed asset acquisitions,NA,NA,a_evaluer,NA
+4.6.2,Perform Business Central operations,30-35,4.6 Process fixed asset transactions,Process fixed asset depreciations,NA,NA,a_evaluer,NA
+4.6.3,Perform Business Central operations,30-35,4.6 Process fixed asset transactions,Process fixed asset disposals,NA,NA,a_evaluer,NA
+4.7.1,Perform Business Central operations,30-35,4.7 Process inventory transactions,Process inventory receipts,NA,NA,a_evaluer,NA
+4.7.2,Perform Business Central operations,30-35,4.7 Process inventory transactions,Process inventory shipments,NA,NA,a_evaluer,NA
+4.7.3,Perform Business Central operations,30-35,4.7 Process inventory transactions,Transfer items between locations,NA,NA,a_evaluer,NA
+4.7.4,Perform Business Central operations,30-35,4.7 Process inventory transactions,Adjust item cost,NA,NA,a_evaluer,NA
+4.7.5,Perform Business Central operations,30-35,4.7 Process inventory transactions,Count inventory,NA,NA,a_evaluer,NA
+4.7.6,Perform Business Central operations,30-35,4.7 Process inventory transactions,Reclassify inventory,NA,NA,a_evaluer,NA
