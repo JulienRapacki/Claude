@@ -3,7 +3,7 @@ Dimension,à confirmer sur ta base,NA,1.4,Page de liste des dimensions
 Dimension Value,à confirmer sur ta base,NA,1.4,NA
 Dimension Value Type,à confirmer sur ta base,NA,1.4,"`Standard`, `Heading`, `Total`, `Begin-Total`, `End-Total`"
 Blocked,à confirmer sur ta base,NA,1.4,Champ présent sur la dimension value
-Global Dimension,à confirmer sur ta base,NA,1.4,Paramétré dans *General Ledger Setup*
+Global Dimension,à confirmer sur ta base,NA,1.4,Paramétré dans `General Ledger Setup`
 Shortcut Dimension,à confirmer sur ta base,NA,1.4,Numérotées 1 à 8
 Default Dimension,à confirmer sur ta base,NA,1.4,"Posée sur customer, vendor, item, G/L account…"
 Value Posting,à confirmer sur ta base,NA,1.4,"`Code Mandatory`, `Same Code`, `No Code`"
@@ -19,3 +19,14 @@ Analysis View,à confirmer sur ta base,NA,1.4,NA
 Customer,à confirmer sur ta base,NA,1.4,NA
 Vendor,à confirmer sur ta base,NA,1.4,NA
 Tell Me,à confirmer sur ta base,NA,1.4,`Alt+Q`
+Chart of Accounts,à confirmer sur ta base,NA,1.4,Page de liste des comptes généraux
+Dimension Code,à confirmer sur ta base,NA,1.4,Champ des default dimensions
+Dimension Value Code,à confirmer sur ta base,NA,1.4,Champ des default dimensions
+Dimension Values,à confirmer sur ta base,NA,1.4,Page des valeurs d'une dimension
+General Journals,à confirmer sur ta base,NA,1.4,Page de liste des feuilles
+Global Dimension 1 Code,à confirmer sur ta base,NA,1.4,Champ de `General Ledger Setup`
+Global Dimension 2 Code,à confirmer sur ta base,NA,1.4,Champ de `General Ledger Setup`
+New,à confirmer sur ta base,NA,1.4,Action de ruban
+Post,à confirmer sur ta base,NA,1.4,Action de validation
+Related,à confirmer sur ta base,NA,1.4,Groupe de ruban donnant accès aux pages liées
+Role Center,à confirmer sur ta base,NA,1.4,Page d'accueil selon le profil

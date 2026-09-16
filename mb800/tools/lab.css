@@ -184,3 +184,37 @@ ul.checklist li::before {
 
 hr { border: none; border-top: 0.5pt solid var(--rule); margin: 5mm 0; }
 a { color: var(--accent); text-decoration: none; }
+
+/* ---------- Chemins d'accès ---------- */
+
+.nav {
+  display: block;
+  margin: 2.5mm 0 2.5mm;
+  padding: 1.8mm 3mm;
+  background: #eef3f8;
+  border-left: 2pt solid var(--accent);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 9pt;
+  line-height: 1.4;
+  break-inside: avoid;
+  break-after: avoid;
+}
+.nav .step { color: var(--accent); font-weight: 600; }
+.nav .sep {
+  color: var(--ink-soft);
+  padding: 0 1.4mm;
+  font-weight: 400;
+}
+.nav .cond { color: var(--ink-soft); font-weight: 400; font-style: italic; }
+.nav-doubt { background: #f5f6f7; border-left-color: var(--ink-soft); }
+.nav-doubt .step { color: var(--ink-soft); }
+.nav .doubt {
+  display: block;
+  margin-top: 0.8mm;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: var(--warn);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
