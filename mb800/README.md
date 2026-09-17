@@ -27,8 +27,8 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 | `journal.csv` | Une ligne par session de travail. |
 | `erreurs.csv` | Une ligne par erreur commise en quiz ou en blanc. Le fichier le plus utile du dispositif. |
 | `lexique.csv` | Termes d'interface EN → FR, cumulés au fil des labs. |
-| `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. |
-| `labs/INDEX.md` | Correspondance labs → objectifs officiels, et liste des objectifs sans lab. |
+| `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. Nom de fichier = numérotation officielle. |
+| `labs/INDEX.md` | Correspondance labs → objectifs officiels, règle de nommage, et liste des objectifs sans lab. |
 | `tools/chemins-verifies.csv` | Registre des 88 chemins d'accès, un verdict sourcé par chemin. |
 | `labs/pdf/` | Les mêmes labs en PDF paginé, à imprimer et à cocher. Généré, jamais édité à la main. |
 | `tools/` | Gabarit de mise en page, feuille de style d'impression, convertisseur Markdown → PDF. |
@@ -42,11 +42,12 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 - `cause` (erreurs) : `connaissance` · `confusion` · `lecture` · `terminologie` · `piege_examen`.
 - `type` (journal) : `lecture` · `pratique` · `lab` · `quiz` · `blanc`.
 - Dates au format `YYYY-MM-DD`. Champ non renseigné = `NA`, jamais de valeur devinée.
-- Plusieurs objectifs dans une même cellule : séparateur `;` (ex. `2.6;2.7`).
+- Plusieurs objectifs dans une même cellule : séparateur `;` (ex. `2.4.2;2.4.3`).
 
 ## Boucle de travail
 
-1. Générer le lab d'un objectif : agent `mb800-lab`, en lui passant l'id (ex. `2.6`).
+1. Générer le lab d'un objectif : agent `mb800-lab`, en lui passant l'id de l'objectif (ex. `2.4.4`).
+   Un id de groupe (`2.4`) n'est pas un id valide : le référentiel n'en contient pas.
    Il produit le Markdown **et** le PDF.
 2. Imprimer le PDF et l'exécuter sur la base de test. Jamais sur la production.
 3. Répondre aux 3 questions de contrôle du lab.
@@ -89,6 +90,11 @@ marqué d'un `?`, qui se rend en gris dans le PDF — la vraisemblance n'est pas
 Les accès réutilisables sont repris dans `tools/gabarit-lab.md`, section « Chemins vérifiés » :
 les prochains labs les recopient au lieu de les réinventer.
 
+**Les labs `2.4.1` à `2.4.4` ne sont pas encore passés au registre.** Ils apportent 35 chemins,
+dont 5 marqués `?` par prudence ; les 30 autres sont recopiés du registre ou de la documentation,
+mais aucun n'a sa ligne dans `tools/chemins-verifies.csv`. Le registre reste donc à 88 lignes
+vérifiées sur 122 chemins présents dans les labs.
+
 Reste que la doc n'est pas ta base : une version ou une personnalisation peut déplacer une action.
 Un chemin attesté reste à confirmer au premier lab exécuté — mais tu ne cherches plus à l'aveugle.
 
@@ -105,4 +111,5 @@ pas de duplication du savoir, pas de backlinks cassés.
 - [ ] Confirmer sur la base les chemins d'accès marqués « à confirmer » dans les labs, et me les donner :
       je les injecte comme références vérifiées et le taux de doute s'effondre sur les labs suivants.
 - [ ] Remplir la colonne `libelle_fr` de `lexique.csv` depuis la base française.
+- [ ] Passer les labs `2.4.1` à `2.4.4` à l'agent `verif-chemins` et étendre `tools/chemins-verifies.csv`.
 - [ ] Décider si l'agent `mb800-quiz` vaut le coup, une fois le référentiel priorisé.
