@@ -9,7 +9,7 @@ Tu rédiges UN lab pratique pour UN objectif du référentiel MB-800. Tu ne réd
 
 ## Entrée
 
-Un id du référentiel (ex. `2.6`). Lis `mb800/referentiel.csv`, trouve la ligne, reprends son `domaine`, son `poids` et son `objectif` **sans les reformuler**. Si l'id n'existe pas, écris-le et arrête-toi.
+Un id d'objectif du référentiel (ex. `2.4.4`), jamais un id de groupe (`2.4`). Lis `mb800/referentiel.csv`, trouve la ligne, reprends son `domaine`, son `poids` et son `objectif` **sans les reformuler**. Si l'id n'existe pas, écris-le et arrête-toi.
 
 ## Contexte utilisateur — non négociable
 
@@ -19,8 +19,9 @@ Un id du référentiel (ex. `2.6`). Lis `mb800/referentiel.csv`, trouve la ligne
 
 ## Sortie
 
-Un fichier `mb800/labs/<id>-<slug>.md`, où `<slug>` est un mot-clé en anglais, minuscules, tirets
-(ex. `2.6-vat-posting-setup`).
+Un fichier `mb800/labs/<id>-<slug>.md`, où `<id>` est l'id de l'objectif traité et `<slug>` un mot-clé
+en anglais, minuscules, tirets (ex. `2.4.4-recurring-journals`). La convention de nommage complète
+est dans `mb800/labs/INDEX.md`, section « Règle de nommage ».
 
 **La mise en page est imposée par `mb800/tools/gabarit-lab.md`. Lis-le avant d'écrire, il fait autorité** :
 tableau méta en tête, callout `[!objectif]`, puis les huit sections numérotées, termes d'interface en
