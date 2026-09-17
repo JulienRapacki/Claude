@@ -135,8 +135,17 @@ def checklists(html):
 
 def build_html(md_path):
     raw = md_path.read_text(encoding="utf-8")
+    expanded = expand_nav(expand_callouts(raw))
+    # Un {nav:} survivant est un bloc mal placé (au fil d'une phrase) : il s'imprimerait
+    # tel quel, accolades comprises. On refuse plutôt que de livrer un PDF abîmé.
+    if "{nav:" in expanded:
+        reste = re.findall(r"\{nav:[^}]*\}", expanded)
+        sys.exit(
+            f"{md_path.name} : {len(reste)} bloc(s) nav non converti(s), "
+            f"un bloc doit occuper sa propre ligne — {reste[0][:60]}"
+        )
     body = markdown.markdown(
-        expand_nav(expand_callouts(raw)),
+        expanded,
         extensions=["tables", "fenced_code", "attr_list", "md_in_html", "sane_lists"],
     )
     body = postprocess(body)
