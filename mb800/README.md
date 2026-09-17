@@ -4,10 +4,9 @@ Certification visée : *Microsoft Certified: Dynamics 365 Business Central Funct
 Examen : **novembre 2026** — date exacte à figer ici : `à définir`.
 Study guide officiel : <https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/mb-800>
 
-> **À faire en premier.** Les 4 domaines et leurs pondérations sont vérifiés, mais les 25 sous-objectifs
-> de `referentiel.csv` ont été rédigés de mémoire : `learn.microsoft.com` est bloqué par le proxy réseau
-> de l'environnement Claude, la page officielle n'a pas pu être lue. Ouvre le study guide depuis ton poste
-> et recale la colonne `objectif` ligne à ligne avant de t'en servir comme plan de travail.
+> **Référentiel recalé sur la source officielle.** Les 125 objectifs de `referentiel.csv` sont
+> repris mot pour mot du study guide Microsoft, compétences mesurées **au 30 juin 2026**
+> (page datée du 30/05/2026). Ils ne sont plus une reconstitution de mémoire.
 
 ## Langue
 
@@ -23,18 +22,22 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 
 | Fichier | Rôle |
 |---|---|
-| `referentiel.csv` | Les 25 objectifs, ton niveau de confiance sur chacun, leur statut. C'est le tableau de bord. |
+| `referentiel.csv` | Les 125 objectifs officiels, regroupés en 21 groupes, avec confiance et statut. C'est le tableau de bord. |
 | `planning.md` | Rétroplanning 10 semaines, pondéré par le poids des domaines. Provisoire jusqu'à l'auto-évaluation. |
 | `journal.csv` | Une ligne par session de travail. |
 | `erreurs.csv` | Une ligne par erreur commise en quiz ou en blanc. Le fichier le plus utile du dispositif. |
 | `lexique.csv` | Termes d'interface EN → FR, cumulés au fil des labs. |
-| `labs/` | Les labs pratiques, un par objectif, générés par l'agent `mb800-lab`. Markdown = source. |
+| `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. |
+| `labs/INDEX.md` | Correspondance labs → objectifs officiels, et liste des objectifs sans lab. |
+| `tools/chemins-verifies.csv` | Registre des 88 chemins d'accès, un verdict sourcé par chemin. |
 | `labs/pdf/` | Les mêmes labs en PDF paginé, à imprimer et à cocher. Généré, jamais édité à la main. |
 | `tools/` | Gabarit de mise en page, feuille de style d'impression, convertisseur Markdown → PDF. |
 
 ## Conventions de saisie
 
 - `confiance` : `0` jamais vu · `1` notion floue · `2` je sais faire en cherchant · `3` je paramètre sans documentation.
+  Première passe au niveau du **groupe** (21 lignes à juger), puis descente au niveau objectif sur les groupes faibles.
+  Évaluer 125 objectifs un par un dès le départ, c'est abandonner au trentième.
 - `statut` : `a_evaluer` → `a_travailler` → `en_cours` → `acquis`.
 - `cause` (erreurs) : `connaissance` · `confusion` · `lecture` · `terminologie` · `piege_examen`.
 - `type` (journal) : `lecture` · `pratique` · `lab` · `quiz` · `blanc`.
@@ -72,6 +75,23 @@ existant et regénère le PDF).
 Un PDF qu'on corrige à la main est un PDF perdu à la prochaine génération : les corrections se font
 dans le `.md`.
 
+## Chemins d'accès : vérifiés, pas devinés
+
+Les 88 chemins `{nav:}` des labs ont été confrontés à deux sources primaires clonées en local :
+la documentation Business Central officielle (`MicrosoftDocs/dynamics365smb-docs`, 2 643 pages,
+c'est la source de learn.microsoft.com) et les 25 labs officiels du cours MB-800
+(`microsoftlearning/MB-800-...`).
+
+Résultat : **64 attestés, 23 corrigés, 1 encore douteux**. Chaque ligne de
+`tools/chemins-verifies.csv` porte sa citation `fichier:ligne`. Un chemin sans citation reste
+marqué d'un `?`, qui se rend en gris dans le PDF — la vraisemblance n'est pas une preuve.
+
+Les accès réutilisables sont repris dans `tools/gabarit-lab.md`, section « Chemins vérifiés » :
+les prochains labs les recopient au lieu de les réinventer.
+
+Reste que la doc n'est pas ta base : une version ou une personnalisation peut déplacer une action.
+Un chemin attesté reste à confirmer au premier lab exécuté — mais tu ne cherches plus à l'aveugle.
+
 ## Répartition des rôles
 
 Ce dépôt porte **le pilotage et la pratique**. Les fiches de connaissance vivent dans le coffre Obsidian :
@@ -80,7 +100,9 @@ pas de duplication du savoir, pas de backlinks cassés.
 ## Prochaines actions
 
 - [ ] Figer la date d'examen en tête de ce fichier et l'inscrire dans `planning.md`.
-- [ ] Recaler les 25 objectifs sur le study guide officiel.
-- [ ] Auto-évaluer les 25 objectifs (`confiance`, `date_evaluation`, `statut`) — semaine du 21/09.
+- [ ] Auto-évaluer les 21 groupes, puis les objectifs des groupes faibles — semaine du 21/09.
 - [ ] Réordonner `planning.md` : fort poids et faible confiance en premier.
+- [ ] Confirmer sur la base les chemins d'accès marqués « à confirmer » dans les labs, et me les donner :
+      je les injecte comme références vérifiées et le taux de doute s'effondre sur les labs suivants.
+- [ ] Remplir la colonne `libelle_fr` de `lexique.csv` depuis la base française.
 - [ ] Décider si l'agent `mb800-quiz` vaut le coup, une fois le référentiel priorisé.

@@ -22,7 +22,8 @@ except ImportError:
 
 TOOLS = Path(__file__).resolve().parent
 CSS = TOOLS / "lab.css"
-OUT_DIR = TOOLS.parent / "labs" / "pdf"
+MB800 = TOOLS.parent
+LABS = MB800 / "labs"
 
 CALLOUT_TITLES = {
     "objectif": "Objectif d'apprentissage",
@@ -135,13 +136,26 @@ def checklists(html):
 
 def build_html(md_path):
     raw = md_path.read_text(encoding="utf-8")
+    expanded = expand_nav(expand_callouts(raw))
+    # Un {nav:} survivant est un bloc mal placé (au fil d'une phrase) : il s'imprimerait
+    # tel quel, accolades comprises. On refuse plutôt que de livrer un PDF abîmé.
+    if "{nav:" in expanded:
+        reste = re.findall(r"\{nav:[^}]*\}", expanded)
+        sys.exit(
+            f"{md_path.name} : {len(reste)} bloc(s) nav non converti(s), "
+            f"un bloc doit occuper sa propre ligne — {reste[0][:60]}"
+        )
     body = markdown.markdown(
-        expand_nav(expand_callouts(raw)),
+        expanded,
         extensions=["tables", "fenced_code", "attr_list", "md_in_html", "sane_lists"],
     )
     body = postprocess(body)
     css = CSS.read_text(encoding="utf-8")
-    foot = f"MB-800 — {md_path.stem} — source : mb800/labs/{md_path.name}"
+    try:
+        src = md_path.relative_to(MB800.parent)
+    except ValueError:
+        src = md_path.name
+    foot = f"MB-800 — {md_path.stem} — source : {src}"
     return (
         "<!DOCTYPE html><html lang='fr'><head><meta charset='utf-8'>"
         f"<title>{md_path.stem}</title><style>{css}</style></head>"
@@ -150,8 +164,11 @@ def build_html(md_path):
 
 
 def to_pdf(md_path, chromium):
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    pdf = OUT_DIR / f"{md_path.stem}.pdf"
+    # Le PDF se range dans un sous-dossier pdf/ à côté de sa source, pas dans un
+    # dossier unique : une fiche d'évaluation n'a rien à faire parmi les labs.
+    out_dir = md_path.parent / "pdf"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    pdf = out_dir / f"{md_path.stem}.pdf"
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as fh:
         fh.write(build_html(md_path))
         html = fh.name
@@ -177,8 +194,9 @@ def to_pdf(md_path, chromium):
 
 
 def main():
+    # INDEX.md est une table de correspondance, pas un lab : il ne se convertit pas.
     targets = sys.argv[1:] or sorted(
-        str(p) for p in (TOOLS.parent / "labs").glob("*.md")
+        str(p) for p in LABS.glob("*.md") if p.stem != "INDEX"
     )
     if not targets:
         sys.exit("Aucun lab à convertir.")

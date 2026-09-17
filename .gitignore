@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# Verdicts partiels des agents de vérification : intermédiaires de travail.
+# Le registre consolidé mb800/tools/chemins-verifies.csv est le livrable.
+mb800/tools/.verif/
