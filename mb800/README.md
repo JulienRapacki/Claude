@@ -29,6 +29,7 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 | `lexique.csv` | Termes d'interface EN → FR, cumulés au fil des labs. |
 | `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. |
 | `labs/INDEX.md` | Correspondance labs → objectifs officiels, et liste des objectifs sans lab. |
+| `tools/chemins-verifies.csv` | Registre des 88 chemins d'accès, un verdict sourcé par chemin. |
 | `labs/pdf/` | Les mêmes labs en PDF paginé, à imprimer et à cocher. Généré, jamais édité à la main. |
 | `tools/` | Gabarit de mise en page, feuille de style d'impression, convertisseur Markdown → PDF. |
 
@@ -73,6 +74,23 @@ existant et regénère le PDF).
 
 Un PDF qu'on corrige à la main est un PDF perdu à la prochaine génération : les corrections se font
 dans le `.md`.
+
+## Chemins d'accès : vérifiés, pas devinés
+
+Les 88 chemins `{nav:}` des labs ont été confrontés à deux sources primaires clonées en local :
+la documentation Business Central officielle (`MicrosoftDocs/dynamics365smb-docs`, 2 643 pages,
+c'est la source de learn.microsoft.com) et les 25 labs officiels du cours MB-800
+(`microsoftlearning/MB-800-...`).
+
+Résultat : **64 attestés, 23 corrigés, 1 encore douteux**. Chaque ligne de
+`tools/chemins-verifies.csv` porte sa citation `fichier:ligne`. Un chemin sans citation reste
+marqué d'un `?`, qui se rend en gris dans le PDF — la vraisemblance n'est pas une preuve.
+
+Les accès réutilisables sont repris dans `tools/gabarit-lab.md`, section « Chemins vérifiés » :
+les prochains labs les recopient au lieu de les réinventer.
+
+Reste que la doc n'est pas ta base : une version ou une personnalisation peut déplacer une action.
+Un chemin attesté reste à confirmer au premier lab exécuté — mais tu ne cherches plus à l'aveugle.
 
 ## Répartition des rôles
 

@@ -177,8 +177,9 @@ def to_pdf(md_path, chromium):
 
 
 def main():
+    # INDEX.md est une table de correspondance, pas un lab : il ne se convertit pas.
     targets = sys.argv[1:] or sorted(
-        str(p) for p in (TOOLS.parent / "labs").glob("*.md")
+        str(p) for p in (TOOLS.parent / "labs").glob("*.md") if p.stem != "INDEX"
     )
     if not targets:
         sys.exit("Aucun lab à convertir.")
