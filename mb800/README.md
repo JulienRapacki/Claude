@@ -27,8 +27,8 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 | `journal.csv` | Une ligne par session de travail. |
 | `erreurs.csv` | Une ligne par erreur commise en quiz ou en blanc. Le fichier le plus utile du dispositif. |
 | `lexique.csv` | Termes d'interface EN → FR, cumulés au fil des labs. |
-| `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. |
-| `labs/INDEX.md` | Correspondance labs → objectifs officiels, et liste des objectifs sans lab. |
+| `labs/` | Les labs pratiques, générés par l'agent `mb800-lab`. Markdown = source. Nom de fichier = numérotation officielle. |
+| `labs/INDEX.md` | Correspondance labs → objectifs officiels, règle de nommage, et liste des objectifs sans lab. |
 | `tools/chemins-verifies.csv` | Registre des 88 chemins d'accès, un verdict sourcé par chemin. |
 | `labs/pdf/` | Les mêmes labs en PDF paginé, à imprimer et à cocher. Généré, jamais édité à la main. |
 | `tools/` | Gabarit de mise en page, feuille de style d'impression, convertisseur Markdown → PDF. |
@@ -42,11 +42,12 @@ C'est un vrai mode d'échec, pas une coquetterie : la confusion de terminologie 
 - `cause` (erreurs) : `connaissance` · `confusion` · `lecture` · `terminologie` · `piege_examen`.
 - `type` (journal) : `lecture` · `pratique` · `lab` · `quiz` · `blanc`.
 - Dates au format `YYYY-MM-DD`. Champ non renseigné = `NA`, jamais de valeur devinée.
-- Plusieurs objectifs dans une même cellule : séparateur `;` (ex. `2.6;2.7`).
+- Plusieurs objectifs dans une même cellule : séparateur `;` (ex. `2.4.2;2.4.3`).
 
 ## Boucle de travail
 
-1. Générer le lab d'un objectif : agent `mb800-lab`, en lui passant l'id (ex. `2.6`).
+1. Générer le lab d'un objectif : agent `mb800-lab`, en lui passant l'id de l'objectif (ex. `2.4.4`).
+   Un id de groupe (`2.4`) n'est pas un id valide : le référentiel n'en contient pas.
    Il produit le Markdown **et** le PDF.
 2. Imprimer le PDF et l'exécuter sur la base de test. Jamais sur la production.
 3. Répondre aux 3 questions de contrôle du lab.
@@ -82,12 +83,26 @@ la documentation Business Central officielle (`MicrosoftDocs/dynamics365smb-docs
 c'est la source de learn.microsoft.com) et les 25 labs officiels du cours MB-800
 (`microsoftlearning/MB-800-...`).
 
-Résultat : **64 attestés, 23 corrigés, 1 encore douteux**. Chaque ligne de
+Résultat au 21/09/2026, sur 123 lignes de registre : **98 attestés** (73 par la doc, 25 par les
+labs officiels), **24 corrigés**, **1 encore douteux**. Chaque ligne de
 `tools/chemins-verifies.csv` porte sa citation `fichier:ligne`. Un chemin sans citation reste
 marqué d'un `?`, qui se rend en gris dans le PDF — la vraisemblance n'est pas une preuve.
 
+Le registre compte 123 lignes pour 122 chemins présents dans les labs : la ligne en trop est
+`G/L Account Categories`, vérifiée lors de la première passe puis retirée du lab `2.1`. Elle est
+conservée — c'est un nom de page attesté, réutilisable par un prochain lab.
+
 Les accès réutilisables sont repris dans `tools/gabarit-lab.md`, section « Chemins vérifiés » :
 les prochains labs les recopient au lieu de les réinventer.
+
+Les labs `2.4.1` à `2.4.4` ont été passés au registre le 21/09/2026 : leurs 35 chemins y ont
+chacun leur ligne. Les 5 qui portaient un `?` sont tranchés — 4 attestés tels quels, 1 corrigé
+(`Data Exch. Definitions` → `Data Exchange Definitions`). Plus aucun chemin douteux dans ces
+quatre labs.
+
+Cette passe-là s'est faite sur un corpus **reconstitué et partiel** : 991 des 1 004 pages de doc
+du tronc commun, mais seulement 14 des 25 labs officiels, le réseau de l'environnement ne laissant
+passer que `raw.githubusercontent.com`. Un silence de `labs-ms` n'y vaut donc pas réfutation.
 
 Reste que la doc n'est pas ta base : une version ou une personnalisation peut déplacer une action.
 Un chemin attesté reste à confirmer au premier lab exécuté — mais tu ne cherches plus à l'aveugle.

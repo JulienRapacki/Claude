@@ -1,4 +1,4 @@
-# Lab 2.6 — Set up VAT
+# Lab hors référentiel — Set up VAT
 
 | | |
 |---|---|
