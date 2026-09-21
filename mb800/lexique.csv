@@ -76,7 +76,7 @@ Customer Ledger Entries,à confirmer sur ta base,NA,2.1.8-currency-exchange-rate
 Customer Posting Group,à confirmer sur ta base,NA,2.3-posting-groups;2.6-accounts-receivable-setup,"Specific posting group, posé sur le customer"
 Customer Posting Groups,à confirmer sur ta base,NA,2.3-posting-groups;2.6-accounts-receivable-setup,Page de liste
 Customers,à confirmer sur ta base,NA,2.3-posting-groups;2.6-accounts-receivable-setup;hors-referentiel-vat-posting-setup,Page de liste
-Data Exch. Definitions,à confirmer sur ta base,NA,2.4.1-bank-account-setup,Page de liste des définitions d'échange
+Data Exchange Definitions,à confirmer sur ta base,NA,2.4.1-bank-account-setup,Page de liste des définitions d'échange
 Default Dimension,à confirmer sur ta base,NA,1.4-dimensions,"Posée sur customer, vendor, item, G/L account…"
 Default Dimension Priorities,à confirmer sur ta base,NA,1.4-dimensions,Par source code
 Depreciation,à confirmer sur ta base,NA,2.7-fixed-assets-setup,Valeur de FA Posting Type

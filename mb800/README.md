@@ -83,17 +83,26 @@ la documentation Business Central officielle (`MicrosoftDocs/dynamics365smb-docs
 c'est la source de learn.microsoft.com) et les 25 labs officiels du cours MB-800
 (`microsoftlearning/MB-800-...`).
 
-Résultat : **64 attestés, 23 corrigés, 1 encore douteux**. Chaque ligne de
+Résultat au 21/09/2026, sur 123 lignes de registre : **98 attestés** (73 par la doc, 25 par les
+labs officiels), **24 corrigés**, **1 encore douteux**. Chaque ligne de
 `tools/chemins-verifies.csv` porte sa citation `fichier:ligne`. Un chemin sans citation reste
 marqué d'un `?`, qui se rend en gris dans le PDF — la vraisemblance n'est pas une preuve.
+
+Le registre compte 123 lignes pour 122 chemins présents dans les labs : la ligne en trop est
+`G/L Account Categories`, vérifiée lors de la première passe puis retirée du lab `2.1`. Elle est
+conservée — c'est un nom de page attesté, réutilisable par un prochain lab.
 
 Les accès réutilisables sont repris dans `tools/gabarit-lab.md`, section « Chemins vérifiés » :
 les prochains labs les recopient au lieu de les réinventer.
 
-**Les labs `2.4.1` à `2.4.4` ne sont pas encore passés au registre.** Ils apportent 35 chemins,
-dont 5 marqués `?` par prudence ; les 30 autres sont recopiés du registre ou de la documentation,
-mais aucun n'a sa ligne dans `tools/chemins-verifies.csv`. Le registre reste donc à 88 lignes
-vérifiées sur 122 chemins présents dans les labs.
+Les labs `2.4.1` à `2.4.4` ont été passés au registre le 21/09/2026 : leurs 35 chemins y ont
+chacun leur ligne. Les 5 qui portaient un `?` sont tranchés — 4 attestés tels quels, 1 corrigé
+(`Data Exch. Definitions` → `Data Exchange Definitions`). Plus aucun chemin douteux dans ces
+quatre labs.
+
+Cette passe-là s'est faite sur un corpus **reconstitué et partiel** : 991 des 1 004 pages de doc
+du tronc commun, mais seulement 14 des 25 labs officiels, le réseau de l'environnement ne laissant
+passer que `raw.githubusercontent.com`. Un silence de `labs-ms` n'y vaut donc pas réfutation.
 
 Reste que la doc n'est pas ta base : une version ou une personnalisation peut déplacer une action.
 Un chemin attesté reste à confirmer au premier lab exécuté — mais tu ne cherches plus à l'aveugle.
@@ -111,5 +120,4 @@ pas de duplication du savoir, pas de backlinks cassés.
 - [ ] Confirmer sur la base les chemins d'accès marqués « à confirmer » dans les labs, et me les donner :
       je les injecte comme références vérifiées et le taux de doute s'effondre sur les labs suivants.
 - [ ] Remplir la colonne `libelle_fr` de `lexique.csv` depuis la base française.
-- [ ] Passer les labs `2.4.1` à `2.4.4` à l'agent `verif-chemins` et étendre `tools/chemins-verifies.csv`.
 - [ ] Décider si l'agent `mb800-quiz` vaut le coup, une fois le référentiel priorisé.
